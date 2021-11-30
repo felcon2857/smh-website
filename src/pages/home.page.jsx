@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, Container } from "react-bootstrap";
+import { Accordion, Carousel, Container } from "react-bootstrap";
 import { TestimonialCard } from "../components/cards/testimonial.card";
 import { testimonial } from "../data/testimonial.data";
 import { Link } from "react-router-dom";
@@ -23,8 +23,118 @@ class HomePage extends React.Component {
     return (
       <div id="bg-body">
         <div className="landing-page-top">
+          <Carousel fade>
+            {/* carousel 1 */}
+            <Carousel.Item>
+              <div className="bg-img">
+                <img
+                  className="d-block w-100"
+                  src="/assets/image-bg.png"
+                  alt="image-bg"
+                />
+              </div>
+              <Carousel.Caption>
+                <Container>
+                  <div className="row align-items-center landing-page-promise ">
+                    <div className="col-lg-6">
+                      <h1 className="landing-page-promise-title fade-in-bottom">
+                        <span>Healthcare</span> should not be expensive.
+                      </h1>
+                      <p className="landing-page-promise-quote py-2 fade-in-bottom2">
+                        We provide quality medical services within the comfort
+                        of your home. We have profesionals that can take care of
+                        you round the clock.
+                      </p>
+                      <div className="pt-3">
+                        <Link
+                          className="theme-btn fade-in-bottom3"
+                          to="/doctors"
+                          type="button"
+                        >
+                          Make an Appointment
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            {/* carousel 2 */}
+            <Carousel.Item>
+              <div className="bg-img">
+                <img
+                  className="d-block w-100"
+                  src="/assets/services-bg.png"
+                  alt="services-bg"
+                />
+              </div>
+
+              <Carousel.Caption>
+                <Container>
+                  <div className="row align-items-center landing-page-promise ">
+                    <div className="col-lg-6">
+                      <h1 className="landing-page-promise-title fade-in-bottom">
+                        Your health is our top <span>Priority</span>
+                      </h1>
+                      <p className="landing-page-promise-quote py-2 fade-in-bottom2">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed dinonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat. Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr.
+                      </p>
+                      <div className="pt-3">
+                        <Link
+                          className="theme-btn fade-in-bottom3"
+                          to="/services"
+                          type="button"
+                        >
+                          Our Services
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            {/* carousel 3 */}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/doctor-bg.png"
+                alt="doctor-bg"
+              />
+              <Carousel.Caption>
+                <Container>
+                  <div className="row align-items-center landing-page-promise ">
+                    <div className="col-lg-6">
+                      <h1 className="landing-page-promise-title fade-in-bottom">
+                        Get a free <span>Advice</span> from our Doctors
+                      </h1>
+                      <p className="landing-page-promise-quote py-2 fade-in-bottom2">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed dinonumy eirmod tempor invidunt ut labore et dolore
+                        magna aliquyam erat. Lorem ipsum dolor sit amet,
+                        consetetur sadipscing elitr.
+                      </p>
+                      <div className="pt-3">
+                        <Link
+                          className="theme-btn fade-in-bottom3"
+                          to="/doctors"
+                          type="button"
+                        >
+                          Talk to Doctor
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
           <div className="landing-page-background">
-            <div className="landing-page-background-image">
+            {/* <div className="landing-page-background-image">
               <Container>
                 <div className="row align-items-center landing-page-promise ">
                   <div className="col-lg-6">
@@ -48,7 +158,7 @@ class HomePage extends React.Component {
                   </div>
                 </div>
               </Container>
-            </div>
+            </div> */}
           </div>
         </div>
         {/* after state */}

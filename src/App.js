@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import HeaderComponent from "./components/header/header.component";
 import "./styles/styles.css";
+import "./styles/mediaquery.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./lib/feather.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -16,6 +17,7 @@ import TestimonialPage from "./pages/testimonial.page";
 import TopHeader from "./components/header/top-header.component";
 import FooterComponent from "./components/footer/footer.component";
 import LoaderComponent from "./components/loader/loader.component";
+import TestimonialSubPage from "./sub-pages/testimonials.sub";
 
 function App() {
   const [currentTimeOut, setCurrentTimeOut] = React.useState(true);
@@ -37,6 +39,10 @@ function App() {
         <Route path="/testimonials" element={<TestimonialPage />} />
         <Route path="/about-us" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route
+          path="/testimonials/reviews/:id"
+          element={<TestimonialSubPage />}
+        />
       </Routes>
       <FooterComponent />
     </Router>
