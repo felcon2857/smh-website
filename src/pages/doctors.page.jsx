@@ -68,7 +68,7 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar.png" alt="avatar" />
+                        {/* <img src="/assets/avatar.png" alt="avatar" /> */}
                       </div>
                     </div>
                     <div className="col-lg-5 my-3">
@@ -129,7 +129,7 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar.png" alt="avatar" />
+                        {/* <img src="/assets/avatar.png" alt="avatar" /> */}
                       </div>
                     </div>
                     <div className="col-lg-5 my-3">
@@ -193,7 +193,7 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar2.png" alt="avatar" />
+                        {/* <img src="/assets/avatar2.png" alt="avatar" /> */}
                       </div>
                     </div>
                     <div className="col-lg-5 my-3">
@@ -252,7 +252,7 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar2.png" alt="avatar" />
+                        {/* <img src="/assets/avatar2.png" alt="avatar" /> */}
                       </div>
                     </div>
                     <div className="col-lg-5 my-3">
