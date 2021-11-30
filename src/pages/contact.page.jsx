@@ -1,18 +1,24 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import PageHeader from "../components/page-header/pageheader.component";
 
 class ContactPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+  componentDidMount = () => {
+    document.title = "CONTACT | STA. MONICA HOMECARE";
+  };
   render() {
     return (
-      <Container>
-        <div className="vh-100 my-5">
-          <h1>Contact Us</h1>
-        </div>
-      </Container>
+      <div id="contact">
+        <PageHeader
+          page_title="Contact Us"
+          tagline="Send us message for more inquiries"
+        />
+        <Container></Container>
+      </div>
     );
   }
 }

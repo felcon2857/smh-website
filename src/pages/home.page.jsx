@@ -2,6 +2,7 @@ import React from "react";
 import { Accordion, Container } from "react-bootstrap";
 import { TestimonialCard } from "../components/cards/testimonial.card";
 import { testimonial } from "../data/testimonial.data";
+import { Link } from "react-router-dom";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -35,9 +36,15 @@ class HomePage extends React.Component {
                       your home. We have profesionals that can take care of you
                       round the clock.
                     </p>
-                    <button className="theme-btn my-3 fade-in-bottom3">
-                      Make an Appointment
-                    </button>
+                    <div className="my-">
+                      <Link
+                        className="theme-btn fade-in-bottom3"
+                        to="/doctors"
+                        type="button"
+                      >
+                        Make an Appointment
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </Container>
@@ -246,45 +253,43 @@ class HomePage extends React.Component {
               alt="graph-img"
               className="img-after"
             />
-            <div className="list-of-service container">
-              <div className="row">
+            <div className="mb-5 list-of-service container">
+              <div className="row mx-5">
                 {/* xray */}
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
-                      <img src="/assets/x-rays-icon.png" alt="x-rays-icon" />
+                      <img src="/assets/consult.png" alt="consult-icon" />
                     </div>
-                    <div className="list-of-service-text mt-4">X-ray</div>
+                    <div className="list-of-service-text mt-4">
+                      Tele Consultation
+                    </div>
                   </div>
                 </div>
                 {/* lab */}
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
-                      <img
-                        src="/assets/microscope-icon.png"
-                        alt="microscope-icon"
-                      />
+                      <img src="/assets/visit.png" alt="visit-icon" />
                     </div>
-                    <div className="list-of-service-text mt-4">LABORATORY</div>
+                    <div className="list-of-service-text mt-4">
+                      Nursing Visit
+                    </div>
                   </div>
                 </div>
                 {/* rehab */}
-                <div className="col-lg-3">
+                <div className="col-lg-4">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
-                      <img
-                        src="/assets/rehabilitation-icon.png"
-                        alt="rehabilitation-icon"
-                      />
+                      <img src="/assets/virtual.png" alt="virtual-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">
-                      REHABILITATION
+                      Virtual Assitance
                     </div>
                   </div>
                 </div>
                 {/* pharmacy */}
-                <div className="col-lg-3">
+                {/* <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img
@@ -294,11 +299,13 @@ class HomePage extends React.Component {
                     </div>
                     <div className="list-of-service-text mt-4">PHARMACY</div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="text-center my-3">
-              <button className="theme-btn my-3">View All Service Lists</button>
+              <Link to="/services" className="theme-btn my-3" type="button">
+                View All Service Lists
+              </Link>
             </div>
           </Container>
         </div>
@@ -319,7 +326,13 @@ class HomePage extends React.Component {
                 {this.renderTestimonials()}
               </div>
               <div className="text-center my-3">
-                <button className="theme-btn my-3">View All Testimonial</button>
+                <Link
+                  to="/testimonials"
+                  className="theme-btn my-3"
+                  type="button"
+                >
+                  View All Testimonial
+                </Link>
               </div>
             </div>
           </Container>
@@ -337,9 +350,9 @@ class HomePage extends React.Component {
             </div>
             <div className="my-3">
               <div className="text-center my-3">
-                <button className="theme-btn my-3">
+                <Link to="/doctors" className="theme-btn my-3" type="button">
                   Make an Appointment Now!
-                </button>
+                </Link>
               </div>
             </div>
           </Container>
