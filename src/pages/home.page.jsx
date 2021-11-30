@@ -108,7 +108,9 @@ class HomePage extends React.Component {
             {/* goals */}
             <div className="row">
               <div className="col-lg-6">
-                <div className="image-container-legf">Your Image Here</div>
+                <div className="image-container-left">
+                  <img src="/assets/image-goal.png" alt="image-goal" />
+                </div>
               </div>
               <div className="col-lg-6">
                 <div className="card-item-colored px-5 py-5 fade-in-bottom">

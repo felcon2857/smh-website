@@ -259,6 +259,10 @@
   font-weight: 700;
   color: #ffffff;
 }
+.image-container-left img {
+  width: 800px;
+  margin-top: 50px;
+}
 .img-icon {
   width: 105px;
   height: 105px;
