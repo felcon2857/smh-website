@@ -25,11 +25,11 @@ class HeaderComponent extends React.Component {
                 </div>
               </div>
             </a>
-
+            <input id="menu-toggle" type="checkbox" />
+            <label className="burger-menu" htmlFor="menu-toggle">
+              <FontAwesomeIcon icon={faBars} size="2x" color="#393E46" />
+            </label>
             <div className="navbar-menu">
-              <div className="burger-menu">
-                <FontAwesomeIcon icon={faBars} size="2x" color="#393E46" />
-              </div>
               <ul>
                 <li>
                   <a href="/">Home</a>

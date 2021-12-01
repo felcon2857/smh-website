@@ -27,6 +27,9 @@ a {
   transition: all 0.3s ease-out 0s;
   position: relative;
 }
+#menu-toggle {
+  display: none;
+}
 .inner-navbar {
   /* margin: 0 auto; */
   display: flex;
