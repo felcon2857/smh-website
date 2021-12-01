@@ -21,7 +21,7 @@ class ServicesPage extends React.Component {
           <Container>
             <div className="row">
               <div className="col-lg-12">
-                <div className="card-item-colored px-5 py-5 mx-5">
+                <div className="card-item-colored py-5">
                   <h2 className="card-item-title">CARE PACKAGE FOR 10 DAYS</h2>
                   <div className="card-item-content">
                     <p>

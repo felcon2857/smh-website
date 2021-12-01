@@ -253,6 +253,10 @@ a {
   background-color: #00af43;
   border-radius: 5px;
   color: #ffffff;
+  padding-right: 3rem !important;
+  padding-left: 3rem !important;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
 }
 .card-item-colored .card-item-content {
   font-size: 14px;
@@ -374,6 +378,7 @@ a {
   -webkit-box-shadow: 0 0 25px rgb(0, 175, 67, 10%);
   box-shadow: 0 0 25px rgb(0, 175, 67, 10%);
   transition: all 0.4s ease-in-out;
+  padding: 3rem !important;
 }
 .testimonial-card:hover {
   background-color: #00af43;
@@ -434,6 +439,10 @@ a {
 .to-call-action-prefer h4 {
   font-size: 16px;
   color: #393e46;
+}
+.mobile-mx {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important;
 }
 /* pages header */
 .page-header {
@@ -725,6 +734,13 @@ a {
 .fade-in-bottom3 {
   -webkit-animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.mobile-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
 
 /**

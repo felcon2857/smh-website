@@ -33,7 +33,7 @@ class TestimonialPage extends React.Component {
                 dinonumy eirmod tempor invidunt ut labore et dolore magn.
               </h4>
               {/* testimonial card */}
-              <div className="row my-3 mx-5 pt-4">
+              <div className="row my-3 mx-2 pt-4">
                 {this.renderTestimonials()}
               </div>
             </div>

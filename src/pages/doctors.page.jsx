@@ -155,11 +155,11 @@ class DoctorPage extends React.Component {
                           &nbsp; Tele-Consult Schedule:
                         </h6>
                       </div>
-                      <div className="my-4">
+                      <div className="my-4 mobile-grid">
                         <span className="section-card-schedule-badge">
                           Tuesday 2:00 PM - 4:00 PM
                         </span>
-                        <span className="section-card-schedule-badge mx-2">
+                        <span className="section-card-schedule-badge">
                           Thursday 2:00 PM - 4:00 PM
                         </span>
                       </div>
@@ -284,11 +284,11 @@ class DoctorPage extends React.Component {
                           &nbsp; Tele-Consult Schedule:
                         </h6>
                       </div>
-                      <div className="my-4">
+                      <div className="my-4 mobile-grid">
                         <span className="section-card-schedule-badge">
                           Mon - Fri 8:30 AM - 9:00 AM
                         </span>
-                        <span className="section-card-schedule-badge mx-2">
+                        <span className="section-card-schedule-badge">
                           Mon - Fri 5:30 PM - 6:30 PM
                         </span>
                       </div>

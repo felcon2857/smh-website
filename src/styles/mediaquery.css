@@ -32,13 +32,101 @@
     display: block;
   }
   .landing-page-top {
-    height: 50vh;
+    height: 50vh !important;
     background-color: #393e46;
   }
   .landing-page-promise {
-    height: 50vh;
+    height: 50vh !important;
+  }
+  .image-container-left {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .image-container-left img {
+    width: 360px;
+  }
+  .after-state-section {
+    margin: 3rem 0px;
+  }
+  .after-state-section-background h2 {
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #393e46;
+  }
+  .card-item-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #00af43;
+  }
+  .after-state-section-background h4 {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #8c96a7;
+  }
+  .list-of-service-text {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .img-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .card-item-content {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .section-card-title h3 {
+    font-weight: 800;
+    font-size: 22px;
+    color: #393e46;
+  }
+  .section-card-title h5 {
+    font-size: 10px;
+  }
+  .mobile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .page-header-title {
+    font-weight: 900;
+    font-size: 35px;
+    color: #393e46;
+    text-align: center;
+  }
+  .page-header-description {
+    font-weight: 600;
+    font-size: 13px;
+    color: #393e46;
+    text-align: center;
+    margin-top: -5px;
+  }
+  .card-item-content-view div {
+    font-weight: 600;
+    letter-spacing: 1px !important;
+    font-size: 14px;
+  }
+  .card-item-colored {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .testimonial-card {
+    padding: 1.5rem !important;
+  }
+  .mobile-mx {
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
+  }
+  .testimonial-card-text {
+    font-size: 12px;
   }
 }
+/* small laptops */
 @media only screen and (max-width: 1366px) {
   .landing-page-promise {
     height: 360px;

@@ -9,7 +9,7 @@ export function TestimonialCard({ item }) {
   return (
     <div className="col-lg-6 mt-4">
       <div
-        className="testimonial-card p-5"
+        className="testimonial-card"
         onClick={() => {
           _handleOnClickRead(item.id);
         }}

@@ -195,7 +195,7 @@ class HomePage extends React.Component {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card-item p-4 fade-in-bottom">
+                <div className="card-item py-4 px-5 fade-in-bottom">
                   <img
                     src="/assets/target-icon.png"
                     alt="target-icon"
@@ -223,7 +223,7 @@ class HomePage extends React.Component {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card-item-colored px-5 py-5 fade-in-bottom">
+                <div className="card-item-colored py-5 fade-in-bottom">
                   <h2 className="card-item-title mb-3">Our Goals</h2>
                   <div className="card-item-content">
                     <p>
@@ -434,7 +434,7 @@ class HomePage extends React.Component {
                 dinonumy eirmod tempor invidunt ut labore et dolore magn.
               </h4>
               {/* testimonial card */}
-              <div className="row my-5 mx-5 pt-4">
+              <div className="row my-5 mobile-mx pt-4">
                 {this.renderTestimonials()}
               </div>
               <div className="text-center my-3">
