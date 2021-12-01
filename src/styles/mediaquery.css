@@ -152,6 +152,43 @@
   .navbar-menu ul li a {
     font-size: 16px;
   }
+  .top-header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+  }
+  .top-header-content-right-item-text {
+    display: none;
+  }
+  .top-header-content-right-item {
+    border-radius: 100px !important;
+    padding: 12px 15px;
+  }
+  .top-header-content-right-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+  }
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    justify-content: center;
+  }
+  .footer-contact-info-section-icon {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .footer-brand-section-text {
+    text-align: center;
+  }
 }
 /* small laptops */
 @media only screen and (max-width: 1366px) {
