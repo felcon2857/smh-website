@@ -1,0 +1,82 @@
+@media only screen and (max-width: 600px) {
+  .navbar-menu ul {
+    display: none;
+  }
+  .main-title {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    color: #008d36;
+  }
+  .header-title {
+    margin: 0 10px;
+  }
+  .top-title {
+    color: #df0916;
+    font-size: 11px;
+    margin-bottom: -10px;
+  }
+  .sub-title {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    margin-top: -10px;
+    text-align: right;
+    font-style: italic;
+    color: #393e46;
+  }
+  .navbar-logo img {
+    width: 45px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .landing-page-top {
+    height: 50vh;
+    background-color: #393e46;
+  }
+  .landing-page-promise {
+    height: 50vh;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .landing-page-promise {
+    height: 360px;
+  }
+  .landing-page-top {
+    height: 360px;
+  }
+  .landing-page-promise-title {
+    font-size: 35px;
+    font-weight: 900;
+    color: #393e46;
+    line-height: 38px;
+  }
+  .landing-page-promise-title span {
+    font-size: 42px;
+    font-weight: 900;
+    color: #008d36;
+    line-height: 38px;
+  }
+  .landing-page-promise-quote {
+    font-size: 13px;
+    font-weight: 600;
+    color: #8c96a7;
+    line-height: 20px;
+  }
+  .theme-btn {
+    background-color: #008d36;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #008d36;
+    padding: 10px 20px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+  }
+  .after-state-section {
+    margin: 6rem 0px;
+  }
+}

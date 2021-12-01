@@ -90,6 +90,9 @@ a {
 .navbar-menu ul li a:hover {
   color: #008d36;
 }
+.burger-menu {
+  display: none;
+}
 /* footer */
 .footer {
   background-color: #ffffff;

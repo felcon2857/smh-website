@@ -1,3 +1,5 @@
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -23,7 +25,11 @@ class HeaderComponent extends React.Component {
                 </div>
               </div>
             </a>
+
             <div className="navbar-menu">
+              <div className="burger-menu">
+                <FontAwesomeIcon icon={faBars} size="2x" color="#393E46" />
+              </div>
               <ul>
                 <li>
                   <a href="/">Home</a>
