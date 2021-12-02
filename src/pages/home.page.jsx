@@ -110,7 +110,7 @@ class HomePage extends React.Component {
                   <div className="row align-items-center landing-page-promise ">
                     <div className="col-lg-6">
                       <h1 className="landing-page-promise-title fade-in-bottom">
-                        Get a free <span>Advice</span> from our Doctors
+                        Get a free <span>Medical Advice</span> from our Doctors
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
