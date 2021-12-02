@@ -23,7 +23,7 @@ function App() {
   const [currentTimeOut, setCurrentTimeOut] = React.useState(true);
   setTimeout(() => {
     setCurrentTimeOut(false);
-  }, 5000);
+  }, 3000);
   if (currentTimeOut) {
     return <LoaderComponent />;
   }

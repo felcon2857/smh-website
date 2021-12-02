@@ -91,7 +91,7 @@ a {
   font-size: 14px;
 }
 .navbar-menu ul li a:hover {
-  color: #ff6700;
+  color: #008d36;
 }
 .burger-menu {
   display: none;
@@ -128,7 +128,7 @@ a {
 .footer-contact-info-section-icon {
   display: flex;
   align-items: center;
-  background-color: #ff6700;
+  background-color: #009238;
   padding: 8px 15px;
   border-radius: 3px;
   color: #ffffff !important;
@@ -142,12 +142,8 @@ a {
   cursor: pointer;
 }
 /* top header */
-/* .top-header {
-  background-color: #00af43;
-  padding: 0.5rem 0;
-} */
 .top-header {
-  background-color: #ff6700;
+  background-color: #00af43;
   padding: 0.5rem 0;
 }
 .top-header-content {
@@ -159,7 +155,7 @@ a {
 .top-header-content-right-item {
   display: flex;
   align-items: center;
-  background-color: #c54f00;
+  background-color: #009238;
   padding: 5px 25px;
   border-radius: 3px;
   color: #ffffff !important;
@@ -207,7 +203,7 @@ a {
 .landing-page-promise-title span {
   font-size: 65px;
   font-weight: 900;
-  color: #ff6700;
+  color: #008d36;
   line-height: 58px;
 }
 .landing-page-promise-quote {
@@ -218,10 +214,10 @@ a {
   line-height: 28px;
 }
 .theme-btn {
-  background-color: #ff6700;
+  background-color: #008d36;
   color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #ff6700;
+  border: 1px solid #008d36;
   padding: 15px 25px;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -230,12 +226,12 @@ a {
   text-decoration: none !important;
 }
 .theme-btn:hover {
-  background-color: #ff8800;
+  background-color: #00af43;
   color: #ffffff;
-  border: 1px solid #ff8800;
-  -webkit-box-shadow: 0px 4px 47px -15px rgba(255, 146, 72, 1);
-  -moz-box-shadow: 0px 4px 47px -15px rgba(255, 146, 72, 1);
-  box-shadow: 0px 4px 47px -15px rgba(255, 146, 72, 1);
+  border: 1px solid #00af43;
+  -webkit-box-shadow: 0px 4px 47px -15px rgba(0, 175, 67, 1);
+  -moz-box-shadow: 0px 4px 47px -15px rgba(0, 175, 67, 1);
+  box-shadow: 0px 4px 47px -15px rgba(0, 175, 67, 1);
 }
 .after-state-section {
   margin: 6rem 0px;
@@ -257,7 +253,7 @@ a {
   border-radius: 10px;
 }
 .card-item-colored {
-  background-color: #ff6700;
+  background-color: #00af43;
   border-radius: 5px;
   color: #ffffff;
   padding-right: 3rem !important;
@@ -289,7 +285,7 @@ a {
 .card-item-title {
   font-size: 28px;
   font-weight: 700;
-  color: #ff7300;
+  color: #00af43;
 }
 .card-item-content {
   font-size: 14px;
@@ -298,8 +294,8 @@ a {
   line-height: 25px;
 }
 .card-item-content-view {
-  background-color: #e65c00 !important;
-  border: 0px solid #e65c00 !important;
+  background-color: #009238 !important;
+  border: 0px solid #009238 !important;
   box-shadow: none !important;
   color: #ffffff !important;
   border-radius: 0.25rem !important;
@@ -320,8 +316,8 @@ a {
 }
 /* accordion */
 .accordion-button {
-  background-color: #e65c00 !important;
-  border: 0px solid #e65c00 !important;
+  background-color: #009238 !important;
+  border: 0px solid #009238 !important;
   box-shadow: none !important;
   color: #ffffff !important;
   border-radius: 0.25rem !important;
@@ -333,8 +329,8 @@ a {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
 }
 .accordion-item {
-  background-color: #e65c00 !important;
-  border: 1px solid #e65c00 !important;
+  background-color: #009238 !important;
+  border: 1px solid #009238 !important;
   color: #ffffff;
   margin: 10px 0px;
   border-radius: 0.25rem !important;
@@ -388,7 +384,7 @@ a {
   padding: 3rem !important;
 }
 .testimonial-card:hover {
-  background-color: #ff6700;
+  background-color: #00af43;
   cursor: pointer;
 }
 .testimonial-card:hover .testimonial-card-title,
@@ -419,7 +415,7 @@ a {
   background-color: transparent;
   outline: none;
   border: none;
-  color: #ff6700;
+  color: #00af43;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -441,7 +437,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 35px;
-  color: #ff6700;
+  color: #009238;
 }
 .to-call-action-prefer h4 {
   font-size: 16px;

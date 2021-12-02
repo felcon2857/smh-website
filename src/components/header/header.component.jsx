@@ -6,8 +6,11 @@ import { Link } from "react-router-dom";
 class HeaderComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      checked: false,
+    };
   }
+
   render() {
     return (
       <div className="navbar-area sticky-top">
@@ -35,22 +38,24 @@ class HeaderComponent extends React.Component {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <Link to="/services">Services</Link>
+                  <a href="/services" onClick={this._handleHideMenu}>
+                    Services
+                  </a>
                 </li>
                 <li>
-                  <Link to="/doctors">Doctors</Link>
+                  <a href="/doctors">Doctors</a>
                 </li>
                 <li>
-                  <Link to="/events">Events</Link>
+                  <a href="/events">Events</a>
                 </li>
                 <li>
-                  <Link to="/testimonials">Testimonial</Link>
+                  <a href="/testimonials">Testimonial</a>
                 </li>
                 <li>
-                  <Link to="/about-us">About Us</Link>
+                  <a href="/about-us">About Us</a>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
             </div>
