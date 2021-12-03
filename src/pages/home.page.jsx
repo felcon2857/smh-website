@@ -26,13 +26,18 @@ class HomePage extends React.Component {
           <Carousel fade>
             {/* carousel 1 */}
             <Carousel.Item>
-              <div className="bg-img">
-                <img
-                  className="d-block w-100"
-                  src="/assets/image-bg.png"
-                  alt="image-bg"
-                />
-              </div>
+              <img
+                className="d-block w-100"
+                src="/assets/image-bg.png"
+                alt="image-bg"
+                className="desktop-image"
+              />
+              <img
+                className="d-block w-100"
+                src="/assets/image-bg-mobile.png"
+                alt="image-bg"
+                className="mobile-image"
+              />
               <Carousel.Caption>
                 <Container>
                   <div className="row align-items-center landing-page-promise ">
@@ -62,13 +67,18 @@ class HomePage extends React.Component {
 
             {/* carousel 2 */}
             <Carousel.Item>
-              <div className="bg-img">
-                <img
-                  className="d-block w-100"
-                  src="/assets/services-bg.png"
-                  alt="services-bg"
-                />
-              </div>
+              <img
+                className="d-block w-100"
+                src="/assets/services-bg.png"
+                alt="services-bg"
+                className="desktop-image"
+              />
+              <img
+                className="d-block w-100"
+                src="/assets/services-bg-mobile.png"
+                alt="services-bg"
+                className="mobile-image"
+              />
 
               <Carousel.Caption>
                 <Container>
@@ -104,6 +114,13 @@ class HomePage extends React.Component {
                 className="d-block w-100"
                 src="/assets/doctor-bg.png"
                 alt="doctor-bg"
+                className="desktop-image"
+              />
+              <img
+                className="d-block w-100"
+                src="/assets/doctor-bg-mobile.png"
+                alt="doctor-bg"
+                className="mobile-image"
               />
               <Carousel.Caption>
                 <Container>
