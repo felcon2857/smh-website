@@ -503,16 +503,18 @@ a {
   box-shadow: 0px 0px 48px -16px rgba(0, 0, 0, 0.2); */
 }
 .section-card-image {
-  padding: 30px 20px;
+  margin: 0px 0px 0px -20px;
+  /* padding-right: 30px !important; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  width: 20%;
 }
 .section-card-image img {
   background-color: #fafafa;
-  border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  border-radius: 5px;
+  width: 200px;
+  height: 269px;
 }
 .section-card-title h3 {
   font-weight: 800;

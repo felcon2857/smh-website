@@ -68,20 +68,20 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar.png" alt="avatar" />
+                        <img src="/assets/avatar-long.png" alt="avatar" />
                       </div>
                     </div>
-                    <div className="col-lg-5 my-3">
+                    <div className="col-lg-5 my-3 mx-5">
                       <div className="section-card-title">
                         <h3>Dr. Leonilo Del Carmen</h3>
                       </div>
                       <div className="info-section">
                         <h5>Surgery</h5>
-                        <div className="dots"></div>
+                        {/* <div className="dots"></div>
                         <a href="#">
                           <FontAwesomeIcon icon={faEnvelope} />
                           &nbsp; nilo_exlap@balayatipan.com
-                        </a>
+                        </a> */}
                       </div>
                       <div className="section-card-subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -114,7 +114,7 @@ class DoctorPage extends React.Component {
                         </button>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-4">
                       {this.state.show_appointment !== 1 ? null : (
                         <AppointmentForm onCancelAction={this.handleCancel} />
                       )}
@@ -129,20 +129,20 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar.png" alt="avatar" />
+                        <img src="/assets/avatar-long.png" alt="avatar" />
                       </div>
                     </div>
-                    <div className="col-lg-5 my-3">
+                    <div className="col-lg-5 my-3 mx-5">
                       <div className="section-card-title">
                         <h3>Dr. Dolores Romella Tiples-Ruiz, MD</h3>
                       </div>
                       <div className="info-section">
                         <h5>Internist | infectious Disease Consultant</h5>
-                        <div className="dots"></div>
+                        {/* <div className="dots"></div>
                         <a href="#">
                           <FontAwesomeIcon icon={faEnvelope} />
                           &nbsp; rommela-ID@balayatipan.com
-                        </a>
+                        </a> */}
                       </div>
                       <div className="section-card-subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -178,7 +178,7 @@ class DoctorPage extends React.Component {
                         </button>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-4">
                       {this.state.show_appointment !== 2 ? null : (
                         <AppointmentForm onCancelAction={this.handleCancel} />
                       )}
@@ -193,10 +193,10 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar2.png" alt="avatar" />
+                        <img src="/assets/avatar2-long.png" alt="avatar" />
                       </div>
                     </div>
-                    <div className="col-lg-5 my-3">
+                    <div className="col-lg-5 my-3 mx-5">
                       <div className="section-card-title">
                         <h3>Dr. Leonard Baraquia, MD</h3>
                       </div>
@@ -237,7 +237,7 @@ class DoctorPage extends React.Component {
                         </button>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-4">
                       {this.state.show_appointment !== 3 ? null : (
                         <AppointmentForm onCancelAction={this.handleCancel} />
                       )}
@@ -252,10 +252,10 @@ class DoctorPage extends React.Component {
                   <div className="row">
                     <div className="col-lg-2">
                       <div className="section-card-image">
-                        <img src="/assets/avatar2.png" alt="avatar" />
+                        <img src="/assets/avatar2-long.png" alt="avatar" />
                       </div>
                     </div>
-                    <div className="col-lg-5 my-3">
+                    <div className="col-lg-5 mx-5">
                       <div className="section-card-title">
                         <h3>Dr. Melvin L. Ibanez, MBA, MD</h3>
                       </div>
@@ -265,14 +265,14 @@ class DoctorPage extends React.Component {
                           and Family Medicine
                         </h5>
                       </div>
-                      <div className="address-section">
+                      {/* <div className="address-section">
                         <FontAwesomeIcon icon={faMapMarkedAlt} />
                         &nbsp;Clinica Ibanez Ground Floor, DMLI Building
                         13th-Lacson St, Brgy. 7 Bacolod City
                         <br />
                         <FontAwesomeIcon icon={faPhoneAlt} />
                         &nbsp;Tel. No. 434-55-46
-                      </div>
+                      </div> */}
                       <div className="section-card-subtitle">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
@@ -307,7 +307,7 @@ class DoctorPage extends React.Component {
                         </button>
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-4">
                       {this.state.show_appointment !== 4 ? null : (
                         <AppointmentForm onCancelAction={this.handleCancel} />
                       )}
