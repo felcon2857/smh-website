@@ -2,7 +2,7 @@ import React from "react";
 import { Accordion, Carousel, Container } from "react-bootstrap";
 import { TestimonialCard } from "../components/cards/testimonial.card";
 import { testimonial } from "../data/testimonial.data";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -22,6 +22,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <div id="bg-body">
+        {/* carousel landing page */}
         <div className="landing-page-top">
           <Carousel fade>
             {/* carousel 1 */}
@@ -46,18 +47,18 @@ class HomePage extends React.Component {
                         <span>Healthcare</span> should not be expensive.
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
-                        We provide quality medical services within the comfort
-                        of your home. We have profesionals that can take care of
-                        you round the clock.
+                        We believe that everybody has the right to a fair
+                        society wherein quality healthcare should not make a
+                        huge impact on your finances.
                       </p>
                       <div className="pt-3">
-                        <Link
+                        <a
                           className="theme-btn fade-in-bottom3"
-                          to="/doctors"
+                          href="/doctors"
                           type="button"
                         >
                           Make an Appointment
-                        </Link>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -65,7 +66,49 @@ class HomePage extends React.Component {
               </Carousel.Caption>
             </Carousel.Item>
 
-            {/* carousel 2 */}
+            {/* carousel 2*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/services-bg.png"
+                alt="services-bg"
+                className="desktop-image"
+              />
+              <img
+                className="d-block w-100"
+                src="/assets/services-bg-mobile.png"
+                alt="services-bg"
+                className="mobile-image"
+              />
+
+              <Carousel.Caption>
+                <Container>
+                  <div className="row align-items-center landing-page-promise ">
+                    <div className="col-lg-6">
+                      <h1 className="landing-page-promise-title fade-in-bottom">
+                        THE COMFORT OF <span>HOME CARE</span>
+                      </h1>
+                      <p className="landing-page-promise-quote py-2 fade-in-bottom2">
+                        We understand that your home is your sanctuary. Our
+                        thrust is helping you heal and recover right in the
+                        comfort of your home.
+                      </p>
+                      <div className="pt-3">
+                        <a
+                          className="theme-btn fade-in-bottom3"
+                          href="/services"
+                          type="button"
+                        >
+                          GET SCHEDULE NOW
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            {/* carousel 3 */}
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -88,19 +131,17 @@ class HomePage extends React.Component {
                         Your health is our top <span>Priority</span>
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed dinonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat. Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr.
+                        We provide quality medical services with medical
+                        professionals who can take care of you round the clock.
                       </p>
                       <div className="pt-3">
-                        <Link
+                        <a
                           className="theme-btn fade-in-bottom3"
-                          to="/services"
+                          href="/services"
                           type="button"
                         >
-                          Our Services
-                        </Link>
+                          OUR SERVICES
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -108,7 +149,48 @@ class HomePage extends React.Component {
               </Carousel.Caption>
             </Carousel.Item>
 
-            {/* carousel 3 */}
+            {/* carousel 4*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/doctor-bg.png"
+                alt="doctor-bg"
+                className="desktop-image"
+              />
+              <img
+                className="d-block w-100"
+                src="/assets/doctor-bg-mobile.png"
+                alt="doctor-bg"
+                className="mobile-image"
+              />
+              <Carousel.Caption>
+                <Container>
+                  <div className="row align-items-center landing-page-promise ">
+                    <div className="col-lg-6">
+                      <h1 className="landing-page-promise-title fade-in-bottom">
+                        COVID-19 and NON-COVID <span>CARE</span>
+                      </h1>
+                      <p className="landing-page-promise-quote py-2 fade-in-bottom2">
+                        Our medical professionals cater to both COVID-19 and
+                        NON-COVID patients. Our medical professionals are
+                        trained to practice the utmost of safety measures.
+                      </p>
+                      <div className="pt-3">
+                        <a
+                          className="theme-btn fade-in-bottom3"
+                          href="/doctors"
+                          type="button"
+                        >
+                          LOOK FOR A DOCTOR
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </Carousel.Caption>
+            </Carousel.Item>
+
+            {/* carousel 5*/}
             <Carousel.Item>
               <img
                 className="d-block w-100"
@@ -130,19 +212,17 @@ class HomePage extends React.Component {
                         Get a free <span>Medical Advice</span> from our Doctors
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                        sed dinonumy eirmod tempor invidunt ut labore et dolore
-                        magna aliquyam erat. Lorem ipsum dolor sit amet,
-                        consetetur sadipscing elitr.
+                        Aside from our various health-oriented services, you can
+                        actually TALK to our DOCTOR for FREE!
                       </p>
                       <div className="pt-3">
-                        <Link
+                        <a
                           className="theme-btn fade-in-bottom3"
-                          to="/doctors"
+                          href="/doctors"
                           type="button"
                         >
-                          Talk to Doctor
-                        </Link>
+                          TALK TO OUR DOCTOR
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -150,6 +230,7 @@ class HomePage extends React.Component {
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
+          {/* dont use this section */}
           <div className="landing-page-background">
             {/* <div className="landing-page-background-image">
               <Container>
@@ -177,13 +258,16 @@ class HomePage extends React.Component {
               </Container>
             </div> */}
           </div>
+          {/* dont use this section */}
         </div>
+
         {/* after state */}
         <div className="after-state-section">
           <Container>
             <div className="after-state-section-background my-5">
               <h2 className="text-center fade-in-bottom">
-                First online homecare services in Western Visayas
+                THE FIRST COMPREHENSIVE ONLINE <br />
+                HOMECARE SYSTEM IN NEGROS OCCIDENTAL
               </h2>
               <h4 className="text-center fade-in-bottom2">
                 Your Health. Your Home. Our Care.
@@ -200,14 +284,10 @@ class HomePage extends React.Component {
                   />
                   <h2 className="card-item-title my-3">Our Vision</h2>
                   <p className="card-item-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Through our team of highly trained, experienced, and
+                    dedicated health and medical professionals, we will provide
+                    quality, practical and cost-effective home-care services
+                    which meet the needs of our patients and their families.
                   </p>
                 </div>
               </div>
@@ -220,14 +300,8 @@ class HomePage extends React.Component {
                   />
                   <h2 className="card-item-title my-3">Our Mission</h2>
                   <p className="card-item-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Be a premiere provider of home-based health and wellness
+                    services.
                   </p>
                 </div>
               </div>
@@ -241,116 +315,61 @@ class HomePage extends React.Component {
               </div>
               <div className="col-lg-6">
                 <div className="card-item-colored py-5 fade-in-bottom">
-                  <h2 className="card-item-title mb-3">Our Goals</h2>
+                  <h2 className="card-item-title mb-3">Our Values</h2>
                   <div className="card-item-content">
-                    <p>
+                    {/* <p>
                       Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed
                       dinonumy eirmod tempor invidunt ut labore.
-                    </p>
+                    </p> */}
                     {/* goal in accordion */}
-                    <Accordion>
+                    <Accordion defaultActiveKey="0">
                       <Accordion.Item eventKey="0">
-                        <Accordion.Header>Goal Item #1</Accordion.Header>
+                        <Accordion.Header>INTEGRITY</Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          We do what is right even when no one is looking
                         </Accordion.Body>
                       </Accordion.Item>
 
                       <Accordion.Item eventKey="1">
-                        <Accordion.Header>Goal item #2</Accordion.Header>
-                        <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
-                        </Accordion.Body>
+                        <Accordion.Header>TEAMWORK</Accordion.Header>
+                        <Accordion.Body>We think and act as one</Accordion.Body>
                       </Accordion.Item>
 
                       <Accordion.Item eventKey="2">
-                        <Accordion.Header>Goal Item #3</Accordion.Header>
+                        <Accordion.Header>DEDICATION</Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          always on call, we put our hearts and collective minds
+                          into your well-being.
                         </Accordion.Body>
                       </Accordion.Item>
 
                       <Accordion.Item eventKey="3">
-                        <Accordion.Header>Goal Item #4</Accordion.Header>
+                        <Accordion.Header>RESPECT</Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          We acknowledge you and your family and make sure you
+                          are included in decisions about your healthcare
                         </Accordion.Body>
                       </Accordion.Item>
 
                       <Accordion.Item eventKey="4">
-                        <Accordion.Header>Goal Item #5</Accordion.Header>
+                        <Accordion.Header>COMPASSION</Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          We are sensitive and concerned about you and your
+                          well-being.
                         </Accordion.Body>
                       </Accordion.Item>
 
                       <Accordion.Item eventKey="5">
-                        <Accordion.Header>Goal Item #6</Accordion.Header>
+                        <Accordion.Header>CUSTOMIZED </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          We will approach your healthcare to suit your needs.
                         </Accordion.Body>
                       </Accordion.Item>
 
                       <Accordion.Item eventKey="6">
-                        <Accordion.Header>Goal Item #7</Accordion.Header>
+                        <Accordion.Header>CONFIDENTIAL</Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          Your information is safe with us.
                         </Accordion.Body>
                       </Accordion.Item>
                     </Accordion>
@@ -366,15 +385,13 @@ class HomePage extends React.Component {
           <Container>
             <div className="after-state-section-background my-5">
               <div className="card-item-title text-center mb-3">
-                Services We Offer
+                Our Service
               </div>
               <h2 className="text-center fade-in-bottom">
                 What We Provide for Your Health
               </h2>
               <h4 className="text-center fade-in-bottom2">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                <br />
-                dinonumy eirmod tempor invidunt ut labore et dolore magn.
+                Choose from a wide range of Balay Atipan services:
               </h4>
             </div>
             <img
@@ -383,42 +400,39 @@ class HomePage extends React.Component {
               className="img-after"
             />
             <div className="mb-5 list-of-service container">
-              <div className="row mx-5">
-                {/* xray */}
-                <div className="col-lg-4">
+              {/* first row */}
+              <div className="row">
+                {/* CARE KIT */}
+                <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/consult.png" alt="consult-icon" />
                     </div>
-                    <div className="list-of-service-text mt-4">
-                      Tele Consultation
-                    </div>
+                    <div className="list-of-service-text mt-4">CARE KIT</div>
                   </div>
                 </div>
-                {/* lab */}
-                <div className="col-lg-4">
+                {/* 10-DAY CARE PACKAGE */}
+                <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/visit.png" alt="visit-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">
-                      Nursing Visit
+                      10-DAY CARE PACKAGE
                     </div>
                   </div>
                 </div>
-                {/* rehab */}
-                <div className="col-lg-4">
+                {/* WOUND CARE */}
+                <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/virtual.png" alt="virtual-icon" />
                     </div>
-                    <div className="list-of-service-text mt-4">
-                      Virtual Assitance
-                    </div>
+                    <div className="list-of-service-text mt-4">WOUND CARE</div>
                   </div>
                 </div>
-                {/* pharmacy */}
-                {/* <div className="col-lg-3">
+                {/* NON-COVID I.V. THERAPY */}
+                <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img
@@ -426,15 +440,45 @@ class HomePage extends React.Component {
                         alt="medicine-icon"
                       />
                     </div>
-                    <div className="list-of-service-text mt-4">PHARMACY</div>
+                    <div className="list-of-service-text mt-4">
+                      NON-COVID I.V. THERAPY (can be customized based on
+                      patient’s needs)
+                    </div>
                   </div>
-                </div> */}
+                </div>
+              </div>
+              {/* 2nd row */}
+              <div className="row">
+                {/* CARE KIT */}
+                <div className="col-lg-3">
+                  <div className="list-of-service-container">
+                    <div className="list-of-service-img">
+                      <img src="/assets/consult.png" alt="consult-icon" />
+                    </div>
+                    <div className="list-of-service-text mt-4">
+                      COVID I.V. THERAPY (can be customized based on patient’s
+                      needs)
+                    </div>
+                  </div>
+                </div>
+                {/* 10-DAY CARE PACKAGE */}
+                <div className="col-lg-3">
+                  <div className="list-of-service-container">
+                    <div className="list-of-service-img">
+                      <img src="/assets/visit.png" alt="visit-icon" />
+                    </div>
+                    <div className="list-of-service-text mt-4">
+                      COVID THERAPY WITH CAREGIVER (can be customized based on
+                      patient’s needs)
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="text-center my-3">
-              <Link to="/services" className="theme-btn my-3" type="button">
+              <a href="/services" className="theme-btn my-3" type="button">
                 View All Service Lists
-              </Link>
+              </a>
             </div>
           </Container>
         </div>
@@ -446,22 +490,20 @@ class HomePage extends React.Component {
                 What our client say?
               </h2>
               <h4 className="text-center fade-in-bottom2">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                <br />
-                dinonumy eirmod tempor invidunt ut labore et dolore magn.
+                See client feedbacks about our services
               </h4>
               {/* testimonial card */}
               <div className="row my-5 mobile-mx pt-4">
                 {this.renderTestimonials()}
               </div>
               <div className="text-center my-3">
-                <Link
-                  to="/testimonials"
+                <a
+                  href="/testimonials"
                   className="theme-btn my-3"
                   type="button"
                 >
                   View All Testimonial
-                </Link>
+                </a>
               </div>
             </div>
           </Container>
@@ -470,18 +512,14 @@ class HomePage extends React.Component {
         <div className="to-call-action p-5">
           <Container>
             <div className="to-call-action-prefer my-3">
-              <h2 className="text-center">Let's get started</h2>
-              <h4 className="text-center my-2">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                dinonumy <br />
-                eirmod tempor invidunt ut labore et dolore magn.
-              </h4>
+              <h2 className="text-center">READY? LET'S GET STARTED!</h2>
+              <h4 className="text-center my-2">Ready to inquire, manage</h4>
             </div>
             <div className="my-3">
               <div className="text-center my-3">
-                <Link to="/doctors" className="theme-btn my-3" type="button">
+                <a href="/doctors" className="theme-btn my-3" type="button">
                   Make an Appointment Now!
-                </Link>
+                </a>
               </div>
             </div>
           </Container>

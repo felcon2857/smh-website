@@ -92,7 +92,7 @@
   }
   .section-card-title h3 {
     font-weight: 800;
-    font-size: 22px;
+    font-size: 20px;
     color: #393e46;
   }
   .section-card-title h5 {
@@ -208,7 +208,24 @@
     width: 100%;
     height: 100%;
   }
+  .text-paragraph {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+    color: #393e46;
+  }
+  .text-title {
+    color: #008d36;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .image-container-about img {
+    width: 380px;
+    margin-top: 50px;
+  }
 }
+
 /* small laptops */
 @media only screen and (max-width: 1366px) {
   .landing-page-promise {
@@ -249,5 +266,26 @@
   }
   .after-state-section {
     margin: 6rem 0px;
+  }
+  .section-card-title h3 {
+    font-weight: 800;
+    font-size: 20px;
+    color: #393e46;
+  }
+  .text-paragraph {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+    color: #393e46;
+  }
+  .text-title {
+    color: #008d36;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .image-container-about img {
+    width: 380px;
+    margin-top: 50px;
   }
 }

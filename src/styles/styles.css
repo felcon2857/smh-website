@@ -194,14 +194,15 @@ a {
   height: 568px;
 }
 .landing-page-promise-title {
-  font-size: 58px;
+  font-size: 55px;
   font-weight: 900;
   color: #393e46;
   line-height: 58px;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 .landing-page-promise-title span {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 900;
   color: #008d36;
   line-height: 58px;
@@ -224,6 +225,7 @@ a {
   font-size: 16px;
   transition: all 0.3s ease-in-out;
   text-decoration: none !important;
+  text-transform: uppercase;
 }
 .theme-btn:hover {
   background-color: #00af43;
@@ -288,7 +290,7 @@ a {
   color: #00af43;
 }
 .card-item-content {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #8c96a7;
   line-height: 25px;
@@ -340,7 +342,7 @@ a {
   border-radius: 0px;
 }
 .accordion-body {
-  font-size: 12px !important;
+  font-size: 14px !important;
   font-weight: 400 !important;
   letter-spacing: 1px !important;
 }
@@ -369,8 +371,8 @@ a {
   max-width: 50px;
 }
 .list-of-service-text {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 900;
   color: #393e46;
   line-height: 25px;
   text-transform: uppercase;
@@ -754,7 +756,51 @@ a {
 .mobile-image {
   display: none;
 }
+.text-paragraph {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  color: #393e46;
+}
+.text-title {
+  color: #008d36;
+  font-size: 35px;
+  font-weight: 900;
+}
+.image-container-about img {
+  width: 500px;
+  margin-top: 50px;
+}
+.card-colored-hover {
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  padding: 20px 20px;
+  transition: all 0.4s ease-in-out;
+}
+.card-colored-hover-title {
+  color: #00af43;
+  font-size: 15px;
+  font-weight: 800;
+}
+.card-colored-hover-text {
+  font-size: 12px;
+  color: #8c96a7;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+}
+.card-colored-hover:hover {
+  background-color: #00af43;
+  color: #ffffff;
+  cursor: pointer;
+}
 
+.card-colored-hover:hover .card-colored-hover-title,
+.card-colored-hover:hover .card-colored-hover-text,
+.card-colored-hover:hover svg {
+  color: #ffffff;
+}
 /**
  * ----------------------------------------
  * animation fade-in-bottom
