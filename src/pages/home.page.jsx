@@ -54,10 +54,10 @@ class HomePage extends React.Component {
                       <div className="pt-3">
                         <a
                           className="theme-btn fade-in-bottom3"
-                          href="/doctors"
+                          href="/services"
                           type="button"
                         >
-                          Make an Appointment
+                          GET STARTED
                         </a>
                       </div>
                     </div>
@@ -96,10 +96,10 @@ class HomePage extends React.Component {
                       <div className="pt-3">
                         <a
                           className="theme-btn fade-in-bottom3"
-                          href="/services"
+                          href="/doctors"
                           type="button"
                         >
-                          GET SCHEDULE NOW
+                          SCHEDULE NOW
                         </a>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ class HomePage extends React.Component {
                       <div className="pt-3">
                         <a
                           className="theme-btn fade-in-bottom3"
-                          href="/doctors"
+                          href="/services"
                           type="button"
                         >
                           LOOK FOR A DOCTOR
@@ -400,19 +400,20 @@ class HomePage extends React.Component {
               className="img-after"
             />
             <div className="mb-5 list-of-service container">
+              {/* disabled */}
               {/* first row */}
               <div className="row">
                 {/* CARE KIT */}
-                <div className="col-lg-3">
+                {/* <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/consult.png" alt="consult-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">CARE KIT</div>
                   </div>
-                </div>
+                </div> */}
                 {/* 10-DAY CARE PACKAGE */}
-                <div className="col-lg-3">
+                {/* <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/visit.png" alt="visit-icon" />
@@ -422,18 +423,18 @@ class HomePage extends React.Component {
                       CARE PACKAGE
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* WOUND CARE */}
-                <div className="col-lg-3">
+                {/* <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/virtual.png" alt="virtual-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">WOUND CARE</div>
                   </div>
-                </div>
+                </div> */}
                 {/* NON-COVID I.V. THERAPY */}
-                <div className="col-lg-3">
+                {/* <div className="col-lg-3">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img
@@ -446,12 +447,14 @@ class HomePage extends React.Component {
                       <br /> THERAPY
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
+              {/* disabled */}
+              {/* disabled */}
               {/* 2nd row */}
               <div className="row">
                 {/* COVID I.V. THERAPY */}
-                <div className="col-lg-3 mt-2">
+                {/* <div className="col-lg-3 mt-2">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/consult.png" alt="consult-icon" />
@@ -460,9 +463,9 @@ class HomePage extends React.Component {
                       COVID I.V. THERAPY
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* COVID THERAPY WITH CAREGIVER */}
-                <div className="col-lg-3 mt-2">
+                {/* <div className="col-lg-3 mt-2">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/visit.png" alt="visit-icon" />
@@ -472,12 +475,98 @@ class HomePage extends React.Component {
                       WITH CAREGIVER
                     </div>
                   </div>
+                </div> */}
+              </div>
+              {/* disabled */}
+              {/* new section */}
+              <div className="row">
+                <div className="col-lg-6">
+                  {/* care kit */}
+                  <div className="d-flex align-items-center justify-content-end my-5 mx-4">
+                    <div className="title-package-container px-3">
+                      <div className="title-package text-right">CARE KIT</div>
+                      <div className="sub-title-package text-right">
+                        Balay Atipan "CARE KIT" Service.
+                      </div>
+                    </div>
+                    <div className="icon-package">
+                      <img src="/assets/consult.png" alt="consult-icon" />
+                    </div>
+                  </div>
+                  {/* 10-DAY CARE PACKAGE*/}
+                  <div className="d-flex align-items-center justify-content-end my-5 mx-4">
+                    <div className="title-package-container px-3">
+                      <div className="title-package text-right">
+                        10-DAY's CARE PACKAGE
+                      </div>
+                      <div className="sub-title-package text-right">
+                        Balay Atipan "10 DAY's CARE" Service.
+                      </div>
+                    </div>
+                    <div className="icon-package">
+                      <img src="/assets/visit.png" alt="visit-icon" />
+                    </div>
+                  </div>
+                  {/* WOUND CARE*/}
+                  <div className="d-flex align-items-center justify-content-end my-5 mx-4">
+                    <div className="title-package-container px-3">
+                      <div className="title-package text-right">WOUND CARE</div>
+                      <div className="sub-title-package text-right">
+                        Balay Atipan "WOUND CARE" Service.
+                      </div>
+                    </div>
+                    <div className="icon-package">
+                      <img src="/assets/virtual.png" alt="virtual-icon" />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-6">
+                  {/* NON-COVID I.V. THERAPY*/}
+                  <div className="d-flex align-items-center justify-content-start my-5 mx-4">
+                    <div className="icon-package">
+                      <img src="/assets/virtual.png" alt="virtual-icon" />
+                    </div>
+                    <div className="title-package-container px-3">
+                      <div className="title-package">
+                        NON-COVID I.V. THERAPY
+                      </div>
+                      <div className="sub-title-package">
+                        Balay Atipan "NON-COVID I.V. THERAPY" Service.
+                      </div>
+                    </div>
+                  </div>
+                  {/*   COVID I.V. THERAPY */}
+                  <div className="d-flex align-items-center justify-content-start my-5 mx-4">
+                    <div className="icon-package">
+                      <img src="/assets/consult.png" alt="consult-icon" />
+                    </div>
+                    <div className="title-package-container px-3">
+                      <div className="title-package">COVID I.V. THERAPY</div>
+                      <div className="sub-title-package">
+                        Balay Atipan "COVID I.V. THERAPY" Service.
+                      </div>
+                    </div>
+                  </div>
+                  {/* COVID THERAPY WITH CAREGIVER*/}
+                  <div className="d-flex align-items-center justify-content-start my-5 mx-4">
+                    <div className="icon-package">
+                      <img src="/assets/visit.png" alt="visit-icon" />
+                    </div>
+                    <div className="title-package-container px-3">
+                      <div className="title-package">
+                        COVID THERAPY WITH CAREGIVER
+                      </div>
+                      <div className="sub-title-package">
+                        Balay Atipan "COVID THERAPY WITH CAREGIVER" Service.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="text-center my-3">
               <a href="/services" className="theme-btn my-3" type="button">
-                View All Service Lists
+                Learn More
               </a>
             </div>
           </Container>
@@ -509,7 +598,7 @@ class HomePage extends React.Component {
           </Container>
         </div>
         {/* last to call aciton */}
-        <div className="to-call-action p-5">
+        <div className="to-call-action bg-light p-5">
           <Container>
             <div className="to-call-action-prefer my-3">
               <h2 className="text-center">READY? LET'S GET STARTED!</h2>

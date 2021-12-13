@@ -17,7 +17,7 @@ class ServicesPage extends React.Component {
           page_title="Our Services"
           tagline="Your Health. Your Home. Our Care."
         />
-        <div className="py-5 bg-lighter">
+        <div className="py-5 bg-light">
           <Container>
             <div className="row">
               <div className="col-lg-12">

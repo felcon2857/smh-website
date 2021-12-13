@@ -75,7 +75,7 @@
     font-weight: 500;
     text-transform: capitalize;
     font-size: 14px;
-    color: #8c96a7;
+    color: #5D646F;
   }
   .list-of-service-text {
     font-size: 15px;
@@ -277,7 +277,7 @@
     font-weight: 600;
     letter-spacing: 0.2px;
     line-height: 22px;
-    color: #8c96a7;
+    color: #5D646F;
   }
   .text-title {
     color: #393e46;
@@ -295,7 +295,7 @@
   }
   .card-colored-hover-text {
     font-size: 12px;
-    color: #8c96a7;
+    color: #5D646F;
     text-transform: capitalize;
     letter-spacing: 0.2px;
   }
@@ -311,7 +311,7 @@
     color: #393e46;
   }
   .card-user-info-position {
-    color: #8c96a7;
+    color: #5D646F;
     font-weight: 700;
     font-size: 14px;
   }
