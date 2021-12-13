@@ -418,7 +418,8 @@ class HomePage extends React.Component {
                       <img src="/assets/visit.png" alt="visit-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">
-                      10-DAY CARE PACKAGE
+                      10-DAY <br />
+                      CARE PACKAGE
                     </div>
                   </div>
                 </div>
@@ -441,35 +442,34 @@ class HomePage extends React.Component {
                       />
                     </div>
                     <div className="list-of-service-text mt-4">
-                      NON-COVID I.V. THERAPY (can be customized based on
-                      patient’s needs)
+                      NON-COVID I.V.
+                      <br /> THERAPY
                     </div>
                   </div>
                 </div>
               </div>
               {/* 2nd row */}
               <div className="row">
-                {/* CARE KIT */}
-                <div className="col-lg-3">
+                {/* COVID I.V. THERAPY */}
+                <div className="col-lg-3 mt-2">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/consult.png" alt="consult-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">
-                      COVID I.V. THERAPY (can be customized based on patient’s
-                      needs)
+                      COVID I.V. THERAPY
                     </div>
                   </div>
                 </div>
-                {/* 10-DAY CARE PACKAGE */}
-                <div className="col-lg-3">
+                {/* COVID THERAPY WITH CAREGIVER */}
+                <div className="col-lg-3 mt-2">
                   <div className="list-of-service-container">
                     <div className="list-of-service-img">
                       <img src="/assets/visit.png" alt="visit-icon" />
                     </div>
                     <div className="list-of-service-text mt-4">
-                      COVID THERAPY WITH CAREGIVER (can be customized based on
-                      patient’s needs)
+                      COVID THERAPY <br />
+                      WITH CAREGIVER
                     </div>
                   </div>
                 </div>

@@ -2,16 +2,27 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Container } from "react-bootstrap";
+import { TeamCard } from "../components/cards/team.card";
 import PageHeader from "../components/page-header/pageheader.component";
+import { team } from "../data/team.data";
 
 class AboutPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { data: team };
   }
   componentDidMount = () => {
     document.title = "ABOUT US | STA. MONICA HOMECARE";
   };
+  renderOfficers(department) {
+    return this.state.data
+      .filter((filterTeams) => {
+        return filterTeams.department === department;
+      })
+      .map((teams, i) => {
+        return <TeamCard key={i} item={teams} />;
+      });
+  }
   render() {
     return (
       <div id="about-us">
@@ -19,6 +30,7 @@ class AboutPage extends React.Component {
           page_title="About us"
           tagline="Your Health. Your Home. Our Care."
         />
+        {/* about */}
         <div className="py-5 bg-white">
           <Container>
             <div className="row align-items-center">
@@ -50,7 +62,8 @@ class AboutPage extends React.Component {
             </div>
           </Container>
         </div>
-        <div className="bg-light py-5">
+        {/* mission vision values */}
+        <div className="bg-white py-5">
           <Container>
             <div className="row px-1">
               <div className="col-lg-6 my-2">
@@ -151,6 +164,38 @@ class AboutPage extends React.Component {
                   </div>
                 </div>
               </div>
+            </div>
+          </Container>
+        </div>
+        {/* our team */}
+        <div className="bg-light py-5">
+          <Container>
+            <div className="after-state-section-background my-5">
+              <div className="card-item-title text-center mb-3">Our Team</div>
+              <h2 className="text-center">Meet The BALAY ATIPAN People's</h2>
+              <h4 className="text-center">Our team's ready to serve you.</h4>
+            </div>
+            <div className="row mb-2">
+              <div className="col-lg-12">
+                <h4 className="text-team-title">OFFICERS</h4>
+              </div>
+            </div>
+            <div className="row mb-2">{this.renderOfficers("OFFICERS")}</div>
+            <div className="row mb-2">
+              <div className="col-lg-12">
+                <h4 className="text-team-title">BOARD OF DIRECTORS</h4>
+              </div>
+            </div>
+            <div className="row mb-2">
+              {this.renderOfficers("BOARD OF DIRECTORS")}
+            </div>
+            <div className="row mb-2">
+              <div className="col-lg-12">
+                <h4 className="text-team-title">MANAGEMENT {"&"} OPERATIONS</h4>
+              </div>
+            </div>
+            <div className="row mb-2">
+              {this.renderOfficers("MANAGEMENT & OPERATIONS")}
             </div>
           </Container>
         </div>
