@@ -1,15 +1,24 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import ServiceCard from "../components/cards/services.card";
 import PageHeader from "../components/page-header/pageheader.component";
+import { services } from "../data/service.data";
 
 class ServicesPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      data: services,
+    };
   }
   componentDidMount = () => {
     document.title = "SERVICES | STA. MONICA HOMECARE";
   };
+  renderServices() {
+    return this.state.data.map((services, i) => (
+      <ServiceCard key={i} item={services} />
+    ));
+  }
   render() {
     return (
       <div id="services">
@@ -17,10 +26,21 @@ class ServicesPage extends React.Component {
           page_title="Our Services"
           tagline="Your Health. Your Home. Our Care."
         />
-        <div className="py-5 bg-light">
+        <div className="py-5 bg-white">
           <Container>
+            <div className="row pt-5">
+              <div className="after-state-section-background">
+                <h2 className="text-center">What We Provide for Your Health</h2>
+                <div className="caption-text text-center">
+                  We provide quality medical services with medical professionals
+                  who can take care of you round the clock.
+                </div>
+              </div>
+            </div>
+            <div className="row pt-5">{this.renderServices()}</div>
+            {/* disabled */}
             <div className="row">
-              <div className="col-lg-12">
+              {/* <div className="col-lg-12">
                 <div className="card-item-colored py-5">
                   <h2 className="card-item-title">CARE PACKAGE FOR 10 DAYS</h2>
                   <div className="card-item-content">
@@ -56,6 +76,23 @@ class ServicesPage extends React.Component {
                     </p>
                   </div>
                 </div>
+              </div> */}
+            </div>
+            {/* end disable */}
+          </Container>
+        </div>
+        {/* last to call aciton */}
+        <div className="to-call-action bg-light p-5">
+          <Container>
+            <div className="to-call-action-prefer my-3">
+              <h2 className="text-center">READY? LET'S GET STARTED!</h2>
+              <h4 className="text-center my-2">Ready to inquire, manage</h4>
+            </div>
+            <div className="my-3">
+              <div className="text-center my-3">
+                <a href="/doctors" className="theme-btn my-3" type="button">
+                  Make an Appointment Now!
+                </a>
               </div>
             </div>
           </Container>

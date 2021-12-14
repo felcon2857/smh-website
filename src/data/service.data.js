@@ -1,6 +1,6 @@
 export const services = [
   {
-    id: 001,
+    id: "001",
     package: "CARE KIT",
     list: [
       "Digital BP Apparatus",
@@ -10,7 +10,7 @@ export const services = [
     ],
   },
   {
-    id: 002,
+    id: "002",
     package: "10-DAY CARE PACKAGE",
     list: [
       "2 Telemedicine Consultations with our Specialists",
@@ -19,7 +19,7 @@ export const services = [
     ],
   },
   {
-    id: 003,
+    id: "003",
     package: "WOUND CARE",
     list: [
       "2 Telemedicine Consultations with our Specialists",
@@ -32,7 +32,7 @@ export const services = [
     ],
   },
   {
-    id: 004,
+    id: "004",
     package: "NON-COVID I.V. THERAPY",
     custom: "can be customized based on patients needs",
     list: [
@@ -44,7 +44,7 @@ export const services = [
     ],
   },
   {
-    id: 005,
+    id: "005",
     package: "COVID I.V. THERAPY",
     custom: "can be customized based on patients needs",
     list: [
@@ -56,7 +56,7 @@ export const services = [
     ],
   },
   {
-    id: 006,
+    id: "006",
     package: "COVID THERAPY WITH CAREGIVER",
     custom: "can be customized based on patients needs",
     list: [

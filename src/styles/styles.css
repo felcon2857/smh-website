@@ -861,6 +861,70 @@ a {
 .text-right {
   text-align: right;
 }
+.caption-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5d646f;
+}
+.service-card {
+  background-color: #fff;
+}
+.service-card-icon-container {
+  margin-top: -50px;
+  text-align: center;
+  line-height: 83px;
+  width: 87px;
+  height: 87px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+}
+.service-card-icon-container img {
+  width: 50px;
+}
+.service-card-inner {
+  background-color: #ffffff;
+  padding: 10px 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px rgb(0, 175, 67, 15%);
+  box-shadow: 0 0 25px rgb(0, 175, 67, 15%);
+}
+.service-text {
+  color: #5d646f;
+}
+.service-text-title {
+  color: #393e46;
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+}
+.service-text-title div div {
+  align-self: center;
+  background-color: #00af43;
+  padding: 1px;
+  width: 50%;
+}
+.service-text ul {
+  list-style: none;
+  padding: 12px;
+}
+.service-text ul li {
+  font-size: 12px;
+  word-wrap: break-word;
+}
+.service-text ul li svg {
+  margin-right: 5px;
+}
+.btn-card-inner {
+  text-align: center;
+  margin-bottom: -30px;
+}
+.btn-card {
+  background-color: #009238;
+  padding: 8px 25px;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
 /**
  * ----------------------------------------
  * animation fade-in-bottom
