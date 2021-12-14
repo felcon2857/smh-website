@@ -54,9 +54,9 @@ export default function ServiceCard({ item }) {
             </ul>
             {/* end services */}
           </div>
-          {item.custom ? null : (
+          {!item.custom ? null : (
             <div className="btn-card-inner">
-              <button className="btn-card">Cutomizable</button>
+              <div className="btn-card">Cutomizable</div>
             </div>
           )}
         </div>

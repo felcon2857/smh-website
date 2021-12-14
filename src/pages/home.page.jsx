@@ -275,7 +275,7 @@ class HomePage extends React.Component {
             </div>
             {/* mission vision */}
             <div className="row">
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div className="card-item py-4 px-5 fade-in-bottom">
                   <img
                     src="/assets/eye-icon.png"
@@ -304,11 +304,11 @@ class HomePage extends React.Component {
                     services.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
             {/* goals */}
             <div className="row">
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div className="image-container-left">
                   <img src="/assets/image-goal.png" alt="image-goal" />
                 </div>
@@ -316,13 +316,13 @@ class HomePage extends React.Component {
               <div className="col-lg-6">
                 <div className="card-item-colored py-5 fade-in-bottom">
                   <h2 className="card-item-title mb-3">Our Values</h2>
-                  <div className="card-item-content">
-                    {/* <p>
+                  <div className="card-item-content"> */}
+              {/* <p>
                       Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed
                       dinonumy eirmod tempor invidunt ut labore.
                     </p> */}
-                    {/* goal in accordion */}
-                    <Accordion defaultActiveKey="0">
+              {/* goal in accordion */}
+              {/* <Accordion defaultActiveKey="0">
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>INTEGRITY</Accordion.Header>
                         <Accordion.Body>
@@ -372,11 +372,11 @@ class HomePage extends React.Component {
                           Your information is safe with us.
                         </Accordion.Body>
                       </Accordion.Item>
-                    </Accordion>
-                    {/* end goal in accordion */}
-                  </div>
+                    </Accordion> */}
+              {/* end goal in accordion */}
+              {/* </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </Container>
         </div>
@@ -394,11 +394,11 @@ class HomePage extends React.Component {
                 Choose from a wide range of Balay Atipan services:
               </h4>
             </div>
-            <img
+            {/* <img
               src="/assets/graph-img.png"
               alt="graph-img"
               className="img-after"
-            />
+            /> */}
             <div className="mb-5 list-of-service container">
               {/* disabled */}
               {/* first row */}

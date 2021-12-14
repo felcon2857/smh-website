@@ -908,22 +908,24 @@ a {
   padding: 12px;
 }
 .service-text ul li {
-  font-size: 12px;
+  font-size: 14px;
   word-wrap: break-word;
+  color: #5d646f;
+  font-weight: 700;
 }
 .service-text ul li svg {
   margin-right: 5px;
 }
 .btn-card-inner {
   text-align: center;
-  margin-bottom: -30px;
 }
 .btn-card {
   background-color: #009238;
   padding: 8px 25px;
   color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 /**
  * ----------------------------------------

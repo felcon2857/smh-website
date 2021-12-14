@@ -18,6 +18,7 @@ import TopHeader from "./components/header/top-header.component";
 import FooterComponent from "./components/footer/footer.component";
 import LoaderComponent from "./components/loader/loader.component";
 import TestimonialSubPage from "./sub-pages/testimonials.sub";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 
 function App() {
   const [currentTimeOut, setCurrentTimeOut] = React.useState(true);
@@ -44,6 +45,7 @@ function App() {
           element={<TestimonialSubPage />}
         />
       </Routes>
+      <MessengerCustomerChat pageId="100438442508559" appId="507978433662821" />
       <FooterComponent />
     </Router>
   );
