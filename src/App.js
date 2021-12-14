@@ -48,7 +48,12 @@ function App() {
         </Routes>
         <FooterComponent />
       </Router>
-      <MessengerCustomerChat pageId="100438442508559" appId="507978433662821" />
+      <MessengerCustomerChat
+        pageId="100438442508559"
+        appId="507978433662821"
+        onCustomerChatDialogShow
+        themeColor="#00AF43"
+      />
     </div>
   );
 }
