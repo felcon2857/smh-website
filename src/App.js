@@ -29,25 +29,27 @@ function App() {
     return <LoaderComponent />;
   }
   return (
-    <Router>
-      <TopHeader />
-      <HeaderComponent />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/doctors" element={<DoctorsPage />} />
-        <Route path="/events" element={<EventsPage />} />
-        <Route path="/testimonials" element={<TestimonialPage />} />
-        <Route path="/about-us" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route
-          path="/testimonials/reviews/:id"
-          element={<TestimonialSubPage />}
-        />
-      </Routes>
+    <div>
+      <Router>
+        <TopHeader />
+        <HeaderComponent />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/doctors" element={<DoctorsPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/testimonials" element={<TestimonialPage />} />
+          <Route path="/about-us" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route
+            path="/testimonials/reviews/:id"
+            element={<TestimonialSubPage />}
+          />
+        </Routes>
+        <FooterComponent />
+      </Router>
       <MessengerCustomerChat pageId="100438442508559" appId="507978433662821" />
-      <FooterComponent />
-    </Router>
+    </div>
   );
 }
 
