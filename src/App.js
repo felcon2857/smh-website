@@ -53,6 +53,8 @@ function App() {
         appId="507978433662821"
         loggedInGreeting="Welcome To Balay Atipan"
         greetingDialogDisplay="show"
+        onCustomerChatDialogShow={true}
+        shouldShowDialog={true}
         themeColor="#00AF43"
       />
     </div>
