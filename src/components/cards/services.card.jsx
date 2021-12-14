@@ -21,37 +21,14 @@ export default function ServiceCard({ item }) {
             </div>
             {/* services */}
             <ul>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />2
-                Telemedicine Consultations with our Specialists
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />2 Nurse
-                Home Visits (with Assessment and Re-assessment good for 1 hour
-                30 minutes)
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
-                10-Day Nursing Virtual Assistance
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />1 Doctor
-                and Registered Nurse Visit (for Wound Dressing)
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
-                Complete PPE
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
-                Medical Supplies and Instruments
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
-                Wound Patch or Ointments (cost includes Doctor and RN complete
-                PPE)
-              </li>
+              {item.list.map((listItem, i) => (
+                <li key={i} className="d-flex align-items-top">
+                  <FontAwesomeIcon icon={faAngleRight} color="#00af43" />{" "}
+                  <p>{listItem}</p>
+                </li>
+              ))}
             </ul>
+
             {/* end services */}
           </div>
           {!item.custom ? null : (

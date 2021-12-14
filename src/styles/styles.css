@@ -911,7 +911,9 @@ a {
   font-size: 14px;
   word-wrap: break-word;
   color: #5d646f;
-  font-weight: 700;
+}
+.service-text ul li p {
+  font-weight: 600;
 }
 .service-text ul li svg {
   margin-right: 5px;
