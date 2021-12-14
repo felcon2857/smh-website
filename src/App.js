@@ -19,6 +19,7 @@ import FooterComponent from "./components/footer/footer.component";
 import LoaderComponent from "./components/loader/loader.component";
 import TestimonialSubPage from "./sub-pages/testimonials.sub";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import TeamPage from "./pages/team.page";
 
 function App() {
   const [currentTimeOut, setCurrentTimeOut] = React.useState(true);
@@ -41,6 +42,7 @@ function App() {
           <Route path="/testimonials" element={<TestimonialPage />} />
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/team" element={<TeamPage />} />
           <Route
             path="/testimonials/reviews/:id"
             element={<TestimonialSubPage />}

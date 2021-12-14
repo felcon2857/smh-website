@@ -19,6 +19,12 @@ export default function ServiceCard({ item }) {
                 <div></div>
               </div>
             </div>
+            {!item.custom ? null : (
+              // <div className="btn-card-inner">
+              //   <div className="btn-card"></div>
+              // </div>
+              <div className="text-center">Cutomizable</div>
+            )}
             {/* services */}
             <ul>
               {item.list.map((listItem, i) => (
@@ -31,11 +37,6 @@ export default function ServiceCard({ item }) {
 
             {/* end services */}
           </div>
-          {!item.custom ? null : (
-            <div className="btn-card-inner">
-              <div className="btn-card">Cutomizable</div>
-            </div>
-          )}
         </div>
       </div>
     </div>

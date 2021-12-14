@@ -55,6 +55,9 @@ class HeaderComponent extends React.Component {
                   <a href="/about-us">About Us</a>
                 </li>
                 <li>
+                  <a href="/team">Team</a>
+                </li>
+                <li>
                   <a href="/contact">Contact</a>
                 </li>
               </ul>

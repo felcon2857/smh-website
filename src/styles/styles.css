@@ -391,7 +391,8 @@ a {
 }
 .testimonial-card:hover .testimonial-card-title,
 .testimonial-card:hover .testimonial-card-text,
-.testimonial-card:hover .card-theme-btn {
+.testimonial-card:hover .card-theme-btn,
+.btn-reaction svg {
   color: #ffffff;
 }
 .testimonial-card-title {
@@ -408,9 +409,9 @@ a {
   color: #5d646f;
   display: -webkit-box;
   width: 100%;
-  -webkit-line-clamp: 3;
+  /* -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
   transition: all 0.4s ease-in-out;
 }
 .card-theme-btn {
@@ -890,6 +891,8 @@ a {
 }
 .service-text {
   color: #5d646f;
+  /* height: 280px; */
+  z-index: 0;
 }
 .service-text-title {
   color: #393e46;
@@ -906,6 +909,8 @@ a {
 .service-text ul {
   list-style: none;
   padding: 12px;
+  /* height: 200px; */
+  /* overflow: hidden; */
 }
 .service-text ul li {
   font-size: 14px;
@@ -928,6 +933,18 @@ a {
   border: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.btn-reaction {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: all ease-in-out 0.4s;
+}
+.btn-reaction svg {
+  color: #393e46;
+}
+.btn-reaction svg:hover {
+  color: #008d36;
 }
 /**
  * ----------------------------------------

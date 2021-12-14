@@ -43,7 +43,8 @@ class FooterComponent extends React.Component {
                     <div className="col-lg-12 my-2">
                       <a className="footer-contact-info-section-icon" href="/">
                         <FontAwesomeIcon icon={faPhoneAlt} />
-                        &nbsp; 0999-9752665 | 0966-7384977
+                        &nbsp; Smart: 0999-9752665 | Globe: 0966-7384977 |
+                        Landline: (034) 468-5203
                       </a>
                     </div>
                   </div>
