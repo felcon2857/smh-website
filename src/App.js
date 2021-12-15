@@ -51,8 +51,8 @@ function App() {
         <FooterComponent />
       </Router>
       <MessengerCustomerChat
-        pageId="100438442508559"
-        appId="507978433662821"
+        pageId="100231752530357"
+        appId="1134817277258354"
         loggedInGreeting="Welcome To Balay Atipan"
         greetingDialogDisplay="show"
         onCustomerChatDialogShow={true}
