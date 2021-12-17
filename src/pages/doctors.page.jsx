@@ -317,6 +317,123 @@ class DoctorPage extends React.Component {
                     </div>
                   </div>
                 </div>
+                {/* 5 */}
+                <div className="section-card">
+                  <div className="row">
+                    <div className="col-lg-2">
+                      <div className="section-card-image">
+                        <img src="/assets/avatar2-long.png" alt="avatar" />
+                      </div>
+                    </div>
+                    <div className="col-lg-5 mx-5">
+                      <div className="section-card-title">
+                        <h3>John Rodsil C. David, MD, FPCP, DPSN</h3>
+                      </div>
+                      <div className="info-section">
+                        <h5>Internal Medicine | Nephrology</h5>
+                      </div>
+                      <div className="section-card-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </div>
+                      <div className="section-card-schedule">
+                        <h6>
+                          <FontAwesomeIcon icon={faCalendarCheck} size="lg" />
+                          &nbsp; Tele-Consult Schedule:
+                        </h6>
+                      </div>
+                      <div className="my-4 mobile-grid">
+                        <span className="section-card-schedule-badge">
+                          By appointment
+                        </span>
+                      </div>
+                      <div className="mt-4">
+                        <button
+                          className="section-card-button-theme"
+                          onClick={() => this.handleShowAppointment(5)}
+                        >
+                          Set Appointment
+                        </button>
+                        <button
+                          className="section-card-button-theme-seamless mx-2"
+                          onClick={() => this.handleShowTalkDoctor(5)}
+                        >
+                          Talk to Doctor
+                        </button>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      {this.state.show_appointment !== 5 ? null : (
+                        <AppointmentForm onCancelAction={this.handleCancel} />
+                      )}
+                      {this.state.show_talkdoctor !== 5 ? null : (
+                        <TalkToDoctorForm onCancelAction={this.handleCancel} />
+                      )}
+                    </div>
+                  </div>
+                </div>
+                {/* 6 */}
+                <div className="section-card">
+                  <div className="row">
+                    <div className="col-lg-2">
+                      <div className="section-card-image">
+                        <img src="/assets/avatar2-long.png" alt="avatar" />
+                      </div>
+                    </div>
+                    <div className="col-lg-5 mx-5">
+                      <div className="section-card-title">
+                        <h3>Amador P. Aguirre Ill, MD, FPNA</h3>
+                      </div>
+                      <div className="info-section">
+                        <h5>
+                          Neurology and Psychiatry | Clinical Neurophysiology
+                        </h5>
+                      </div>
+                      <div className="section-card-subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </div>
+                      <div className="section-card-schedule">
+                        <h6>
+                          <FontAwesomeIcon icon={faCalendarCheck} size="lg" />
+                          &nbsp; Tele-Consult Schedule:
+                        </h6>
+                      </div>
+                      <div className="my-4 mobile-grid">
+                        <span className="section-card-schedule-badge">
+                          Mon-Tue 2:00-5:00 PM
+                        </span>
+                        <span className="section-card-schedule-badge">
+                          Thu-Fri 2:00-5:00 PM
+                        </span>
+                      </div>
+                      <div className="mt-4">
+                        <button
+                          className="section-card-button-theme"
+                          onClick={() => this.handleShowAppointment(6)}
+                        >
+                          Set Appointment
+                        </button>
+                        <button
+                          className="section-card-button-theme-seamless mx-2"
+                          onClick={() => this.handleShowTalkDoctor(6)}
+                        >
+                          Talk to Doctor
+                        </button>
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      {this.state.show_appointment !== 6 ? null : (
+                        <AppointmentForm onCancelAction={this.handleCancel} />
+                      )}
+                      {this.state.show_talkdoctor !== 6 ? null : (
+                        <TalkToDoctorForm onCancelAction={this.handleCancel} />
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </Container>
