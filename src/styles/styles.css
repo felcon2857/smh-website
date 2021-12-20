@@ -790,6 +790,14 @@ a {
   color: #5d646f;
   text-transform: capitalize;
   letter-spacing: 0.2px;
+  /* font-family: "Poppins", sans-serif; */
+}
+.card-colored-hover-text2 {
+  font-size: 14px;
+  color: #5d646f;
+  text-transform: capitalize;
+  letter-spacing: 0.2px;
+  font-family: "Poppins", sans-serif;
 }
 .card-colored-hover:hover {
   border: 1px solid #00af43;
@@ -800,6 +808,7 @@ a {
 
 .card-colored-hover:hover .card-colored-hover-title,
 .card-colored-hover:hover .card-colored-hover-text,
+.card-colored-hover:hover .card-colored-hover-text2,
 .card-colored-hover:hover svg {
   color: #ffffff;
 }
@@ -945,6 +954,38 @@ a {
 }
 .btn-reaction svg:hover {
   color: #ffffff;
+}
+.form-card {
+  /* background-color: #ffffff; */
+  padding: 20px 45px;
+  border-radius: 10px;
+}
+.form-title {
+  font-size: 35px;
+  font-weight: 900;
+  color: #393e46;
+}
+.form-grp {
+  /* background-color: #393e46; */
+  width: 100%;
+}
+.form-input {
+  background-color: #ffffff;
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  transition: all ease-in-out 0.4s;
+}
+.form-input:focus {
+  border: 1px solid #00af43;
+}
+.form-sub-title {
+  color: #5d646f;
+  font-weight: 600;
 }
 /**
  * ----------------------------------------
