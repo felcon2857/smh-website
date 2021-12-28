@@ -1,11 +1,14 @@
 import React from "react";
 
-function TalkToDoctorForm({onCancelAction}) {
+function TalkToDoctorForm({ onCancelAction, theDoctor }) {
   return (
     <div className="row my-4 form-section">
       <div className="colg-lg-12">
         <h6 className="header-form-title">Talk To The Doctor</h6>
-        <p className="header-form-subtitle">
+        <p
+          className="header-form-subtitle"
+          style={{ color: "#00AF43", fontStyle: "italic" }}
+        >
           You will receive a call after sending your infomation.
         </p>
       </div>
@@ -70,7 +73,10 @@ function TalkToDoctorForm({onCancelAction}) {
       {/* button */}
       <div className="mt-2">
         <button className="section-card-button-theme">Talk Now</button>
-        <button className="section-card-button-theme-seamless mx-2" onClick={onCancelAction}>
+        <button
+          className="section-card-button-theme-seamless mx-2"
+          onClick={onCancelAction}
+        >
           Cancel
         </button>
       </div>

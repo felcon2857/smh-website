@@ -33,7 +33,12 @@ class FooterComponent extends React.Component {
                 <div className="footer-contact-info-section">
                   <div className="row">
                     <div className="col-lg-12 my-2">
-                      <a className="footer-contact-info-section-icon" href="/">
+                      <a
+                        className="footer-contact-info-section-icon"
+                        href="https://web.facebook.com/Balay-Atipan-100231752530357"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <FontAwesomeIcon icon={faFacebook} />
                         &nbsp; Visit Our Facebook Page
                       </a>

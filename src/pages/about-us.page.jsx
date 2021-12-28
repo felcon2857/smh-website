@@ -62,7 +62,7 @@ class AboutPage extends React.Component {
                   <div className="card-colored-hover d-flex align-items-center my-2">
                     <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                     <div className="card-colored-hover-text px-2">
-                      Be a premiere provider of home-based health and wellness
+                      Be a premium provider of home-based health and wellness
                       services.
                     </div>
                   </div>

@@ -22,7 +22,12 @@ class TopHeader extends React.Component {
               </div>
             </div>
             <div className="top-header-content-right">
-              <a className="top-header-content-right-item" href="/">
+              <a
+                className="top-header-content-right-item"
+                href="https://web.facebook.com/Balay-Atipan-100231752530357"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="top-header-content-right-item-icon">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </div>

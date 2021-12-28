@@ -11,16 +11,4 @@ export const testimonial = [
     testimony:
       "Thanks to MJ, Sarah and our nursing team for their concerted, well coordinated with attending physician for orders and efficient efforts. Until then I go back to service after leave. God bless our patients and Balay Atipan's endeavors.",
   },
-  {
-    id: "3",
-    client_name: "BA Client 3",
-    testimony:
-      "Thanks to MJ, Sarah and our nursing team for their concerted, well coordinated with attending physician for orders and efficient efforts. Until then I go back to service after leave. God bless our patients and Balay Atipan's endeavors.",
-  },
-  {
-    id: "4",
-    client_name: "BA Client 4",
-    testimony:
-      "Thanks to MJ, Sarah and our nursing team for their concerted, well coordinated with attending physician for orders and efficient efforts. Until then I go back to service after leave. God bless our patients and Balay Atipan's endeavors.",
-  },
 ];

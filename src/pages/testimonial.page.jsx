@@ -28,10 +28,12 @@ class TestimonialPage extends React.Component {
           <Container>
             <div className="after-state-section-background py-5">
               <h4 className="text-center">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                <br />
-                dinonumy eirmod tempor invidunt ut labore et dolore magn.
+                Give us your feedbacks and let us know what you think about our
+                services.
               </h4>
+              <div className="pt-4 text-center">
+                <button className="theme-btn">Give us Feedback</button>
+              </div>
               {/* testimonial card */}
               <div className="row my-3 mx-2 pt-4">
                 {this.renderTestimonials()}

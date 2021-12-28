@@ -1,7 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import ServiceCard from "../components/cards/services.card";
+// import ServiceCard from "../components/cards/services.card";
 import PageHeader from "../components/page-header/pageheader.component";
+import ServicesTabs from "../components/tabs/services.tabs";
 import { services } from "../data/service.data";
 
 class ServicesPage extends React.Component {
@@ -14,11 +15,11 @@ class ServicesPage extends React.Component {
   componentDidMount = () => {
     document.title = "SERVICES | STA. MONICA HOMECARE";
   };
-  renderServices() {
-    return this.state.data.map((services, i) => (
-      <ServiceCard key={i} item={services} />
-    ));
-  }
+  // renderServices() {
+  //   return this.state.data.map((services, i) => (
+  //     <ServicesTabs key={i} item={services} />
+  //   ));
+  // }
   render() {
     return (
       <div id="services">
@@ -37,7 +38,9 @@ class ServicesPage extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="row pt-5">{this.renderServices()}</div>
+            <div className="row pt-5">
+              <ServicesTabs />
+            </div>
             {/* disabled */}
             <div className="row">
               {/* <div className="col-lg-12">

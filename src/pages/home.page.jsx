@@ -44,7 +44,8 @@ class HomePage extends React.Component {
                   <div className="row align-items-center landing-page-promise ">
                     <div className="col-lg-6">
                       <h1 className="landing-page-promise-title fade-in-bottom">
-                        <span>Healthcare</span> should not be expensive.
+                        <span>Healthcare</span> should <span>not</span> be
+                        expensive.
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
                         We believe that everybody has the right to a fair
@@ -86,7 +87,7 @@ class HomePage extends React.Component {
                   <div className="row align-items-center landing-page-promise ">
                     <div className="col-lg-6">
                       <h1 className="landing-page-promise-title fade-in-bottom">
-                        THE COMFORT OF <span>HOME CARE</span>
+                        THE <span>COMFORT</span> OF HOME CARE
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
                         We understand that your home is your sanctuary. Our
@@ -128,7 +129,8 @@ class HomePage extends React.Component {
                   <div className="row align-items-center landing-page-promise ">
                     <div className="col-lg-6">
                       <h1 className="landing-page-promise-title fade-in-bottom">
-                        Your health is our top <span>Priority</span>
+                        Your <span>health</span> is our top{" "}
+                        <span>Priority</span>
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
                         We provide quality medical services with medical
@@ -168,7 +170,7 @@ class HomePage extends React.Component {
                   <div className="row align-items-center landing-page-promise ">
                     <div className="col-lg-6">
                       <h1 className="landing-page-promise-title fade-in-bottom">
-                        COVID-19 and NON-COVID <span>CARE</span>
+                        <span>COVID-19</span> and <span>NON-COVID</span> CARE
                       </h1>
                       <p className="landing-page-promise-quote py-2 fade-in-bottom2">
                         Our medical professionals cater to both COVID-19 and
@@ -191,7 +193,7 @@ class HomePage extends React.Component {
             </Carousel.Item>
 
             {/* carousel 5*/}
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className="d-block w-100"
                 src="/assets/doctor-bg.png"
@@ -228,7 +230,7 @@ class HomePage extends React.Component {
                   </div>
                 </Container>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
           {/* dont use this section */}
           <div className="landing-page-background">
@@ -270,7 +272,7 @@ class HomePage extends React.Component {
                 HOMECARE SYSTEM IN NEGROS OCCIDENTAL
               </h2>
               <h4 className="text-center fade-in-bottom2">
-                Your Health. Your Home. Our Care.
+                <i>Your Health. Your Home. Our Care.</i>
               </h4>
             </div>
             {/* mission vision */}
@@ -300,7 +302,7 @@ class HomePage extends React.Component {
                   />
                   <h2 className="card-item-title my-3">Our Mission</h2>
                   <p className="card-item-content">
-                    Be a premiere provider of home-based health and wellness
+                    Be a premium provider of home-based health and wellness
                     services.
                   </p>
                 </div>
@@ -318,8 +320,8 @@ class HomePage extends React.Component {
                   <h2 className="card-item-title mb-3">Our Values</h2>
                   <div className="card-item-content">
                     <p>
-                      Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed
-                      dinonumy eirmod tempor invidunt ut labore.
+                      {/* Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed
+                      dinonumy eirmod tempor invidunt ut labore. */}
                     </p>
                     {/* goal in accordion */}
                     <Accordion defaultActiveKey="0">
@@ -385,7 +387,7 @@ class HomePage extends React.Component {
           <Container>
             <div className="after-state-section-background my-5">
               <div className="card-item-title text-center mb-3">
-                Our Service
+                Our Services
               </div>
               <h2 className="text-center fade-in-bottom">
                 What We Provide for Your Health
