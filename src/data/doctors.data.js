@@ -24,7 +24,7 @@ export const doctors = [
       "Thursday - 2PM",
       "Thursday - 4PM",
     ],
-    img: "/assets/dr_romella.jpg",
+    img: "/assets/dr_romella.JPG",
   },
   {
     id: "003",
@@ -35,7 +35,7 @@ export const doctors = [
       "Show you how it's possible to treat, prevent and often reverse many diseases and health problems with personalized lifestyle changes.",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
-    img: "/assets/dr_baraquia.jpg",
+    img: "/assets/dr_baraquia.JPG",
   },
   {
     id: "004",
@@ -52,7 +52,7 @@ export const doctors = [
       "Thursday - 2PM",
       "Thursday - 4PM",
     ],
-    img: "/assets/dr_ibanez.jpg",
+    img: "/assets/dr_ibanez.JPG",
   },
   {
     id: "005",
@@ -83,6 +83,6 @@ export const doctors = [
       "Friday - 2PM",
       "Friday - 5PM",
     ],
-    img: "/assets/dr_aguirre.jpg",
+    img: "/assets/dr_aguirre.JPG",
   },
 ];

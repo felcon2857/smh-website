@@ -5,21 +5,21 @@ export const team = [
     name: "Dr. Melvin L. Ibañez",
     position: "CEO",
     department: "OFFICERS",
-    image: "/assets/dr_ibanez.jpg",
+    image: "/assets/dr_ibanez.JPG",
   },
   {
     id: "002",
     name: "Dr. Leonard Baraquia",
     position: "PRESIDENT",
     department: "OFFICERS",
-    image: "/assets/dr_baraquia.jpg",
+    image: "/assets/dr_baraquia.JPG",
   },
   {
     id: "003",
     name: "Dr. John P. Alejano",
     position: "VICE PRESIDENT",
     department: "OFFICERS",
-    image: "/assets/dr_alejano.jpg",
+    image: "/assets/dr_alejano.JPG",
   },
   {
     id: "004",
@@ -47,7 +47,7 @@ export const team = [
     name: "Dr. Rommela T. Ruiz",
     position: "ASST. TREASURER",
     department: "OFFICERS",
-    image: "/assets/dr_romella.jpg",
+    image: "/assets/dr_romella.JPG",
   },
 
   //BOARD OF DIRECTORS
@@ -57,7 +57,7 @@ export const team = [
     name: "Dr. Amador P. Aguirre III",
     position: "NA",
     department: "BOARD OF DIRECTORS",
-    image: "/assets/dr_aguirre.jpg",
+    image: "/assets/dr_aguirre.JPG",
   },
   {
     id: "009",
@@ -88,14 +88,14 @@ export const team = [
     name: "Dr. Melvin L. Ibañez",
     position: "CEO",
     department: "MANAGEMENT & OPERATIONS",
-    image: "/assets/dr_ibanez.jpg",
+    image: "/assets/dr_ibanez.JPG",
   },
   {
     id: "013",
     name: "Dr. John P. Alejano",
     position: "MEDICAL DIRECTOR",
     department: "MANAGEMENT & OPERATIONS",
-    image: "/assets/dr_alejano.jpg",
+    image: "/assets/dr_alejano.JPG",
   },
   {
     id: "014",
