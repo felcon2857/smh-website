@@ -63,7 +63,7 @@ export const doctors = [
       "Medical doctor who specializes in kidney care and treating diseases of the kidneys.",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
-    img: "/assets/dr_david.jpg",
+    img: "/assets/dr_david.JPG",
   },
   {
     id: "006",

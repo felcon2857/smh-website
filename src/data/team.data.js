@@ -64,7 +64,7 @@ export const team = [
     name: "Dr. John Rodsil C. David",
     position: "NA",
     department: "BOARD OF DIRECTORS",
-    image: "/assets/dr_david.jpg",
+    image: "/assets/dr_david.JPG",
   },
   {
     id: "010",
