@@ -75,7 +75,7 @@
     font-weight: 500;
     text-transform: capitalize;
     font-size: 14px;
-    color: #5D646F;
+    color: #5d646f;
   }
   .list-of-service-text {
     font-size: 15px;
@@ -277,7 +277,7 @@
     font-weight: 600;
     letter-spacing: 0.2px;
     line-height: 22px;
-    color: #5D646F;
+    color: #5d646f;
   }
   .text-title {
     color: #393e46;
@@ -295,7 +295,7 @@
   }
   .card-colored-hover-text {
     font-size: 12px;
-    color: #5D646F;
+    color: #5d646f;
     text-transform: capitalize;
     letter-spacing: 0.2px;
   }
@@ -311,8 +311,22 @@
     color: #393e46;
   }
   .card-user-info-position {
-    color: #5D646F;
+    color: #5d646f;
     font-weight: 700;
     font-size: 14px;
+  }
+  .section-card-image {
+    margin: 0px 0px 0px -20px;
+    padding-right: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+  }
+  .section-card-image img {
+    background-color: #fafafa;
+    border-radius: 5px;
+    width: 95%;
+    border: 1px solid #e2ffed;
   }
 }

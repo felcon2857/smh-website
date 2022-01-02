@@ -6,6 +6,8 @@ function AppointmentForm({
   daySchedule,
   timeSchedule,
 }) {
+  const refdate = React.useRef();
+  const reftime = React.useRef();
   return (
     <div className="row my-4 form-section">
       <div className="colg-lg-12">
@@ -73,10 +75,24 @@ function AppointmentForm({
       {/* schedule */}
       <div className="row my-1">
         <div className="col-lg-6">
-          <input type="date" className="form-input-side" />
+          <input
+            type="text"
+            className="form-input-side"
+            ref={refdate}
+            onFocus={() => (refdate.current.type = "date")}
+            onBlur={() => (refdate.current.type = "text")}
+            placeholder="Appointment Date"
+          />
         </div>
         <div className="col-lg-6">
-          <input type="time" className="form-input-side" />
+          <input
+            type="text"
+            className="form-input-side"
+            placeholder="Appointment Time"
+            ref={reftime}
+            onFocus={() => (reftime.current.type = "time")}
+            onBlur={() => (reftime.current.type = "text")}
+          />
         </div>
       </div>
       {/* message */}
