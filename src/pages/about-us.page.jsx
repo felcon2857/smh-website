@@ -2,7 +2,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Container } from "react-bootstrap";
-import { TeamCard } from "../components/cards/team.card";
+// import { TeamCard } from "../components/cards/team.card";
 import PageHeader from "../components/page-header/pageheader.component";
 import { team } from "../data/team.data";
 

@@ -14,7 +14,7 @@ export default function ServicesTabs() {
             <>
               <div
                 className={
-                  activeID == services.id
+                  activeID === services.id
                     ? "tabs tabs-active mx-3"
                     : "tabs mx-3"
                 }
@@ -30,7 +30,7 @@ export default function ServicesTabs() {
         <section className="tabs-content pt-5">
           {data
             .filter((item) => {
-              return item.id == activeID;
+              return item.id === activeID;
             })
             .map((listItem) => {
               return (

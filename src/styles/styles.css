@@ -643,6 +643,10 @@ a {
   -moz-box-shadow: 0px 4px 47px -15px rgba(0, 175, 67, 1);
   box-shadow: 0px 4px 47px -15px rgba(0, 175, 67, 1);
 }
+.section-card-button-theme:disabled {
+  background-color: #d6d6d6;
+  border: 1px solid #d6d6d6;
+}
 .address-section {
   font-size: 12px;
   font-size: 500;
@@ -1165,6 +1169,29 @@ a {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+.flex-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.successMessage {
+  background-color: #e2ffed;
+  color: #008d36;
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.successMessage h1 {
+  font-size: 14px;
+  font-weight: 800;
+  color: #008d36;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 /**

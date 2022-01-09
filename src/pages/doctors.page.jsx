@@ -1,12 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-
 import PageHeader from "../components/page-header/pageheader.component";
-import {
-  faMapMarkedAlt,
-  faPhoneAlt,
-  faStethoscope,
-} from "@fortawesome/free-solid-svg-icons";
+import { faStethoscope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { doctors } from "../data/doctors.data";
 import DoctorCard from "../components/cards/doctor.card";
