@@ -50,7 +50,7 @@ function App() {
         </Routes>
         <FooterComponent />
       </Router>
-      {/* <MessengerCustomerChat
+      <MessengerCustomerChat
         pageId="100231752530357"
         appId="1134817277258354"
         loggedInGreeting="Welcome To Balay Atipan"
@@ -58,7 +58,7 @@ function App() {
         onCustomerChatDialogShow={true}
         shouldShowDialog={true}
         themeColor="#00AF43"
-      /> */}
+      />
     </div>
   );
 }
