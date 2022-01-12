@@ -10,7 +10,7 @@ class TeamPage extends React.Component {
     this.state = { data: team };
   }
   componentDidMount = () => {
-    document.title = "ABOUT US | STA. MONICA HOMECARE";
+    document.title = "OUR TEAM | STA. MONICA HOMECARE";
   };
   renderOfficers(department) {
     return this.state.data

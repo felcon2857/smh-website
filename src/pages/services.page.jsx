@@ -92,7 +92,7 @@ class ServicesPage extends React.Component {
               <h4 className="text-center my-2">Ready to inquire, manage</h4>
             </div>
             <div className="my-3">
-              <div className="text-center my-3">
+              <div className="text-center py-3">
                 <a href="/doctors" className="theme-btn my-3" type="button">
                   Make an Appointment Now!
                 </a>

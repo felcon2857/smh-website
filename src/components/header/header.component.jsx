@@ -35,30 +35,30 @@ class HeaderComponent extends React.Component {
             <div className="navbar-menu">
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <a href="/services" onClick={this._handleHideMenu}>
+                  <Link to="/services" onClick={this._handleHideMenu}>
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/doctors">Doctors</a>
+                  <Link to="/doctors">Doctors</Link>
                 </li>
                 <li>
-                  <a href="/events">Events</a>
+                  <Link to="/events">Events</Link>
                 </li>
                 <li>
-                  <a href="/testimonials">Testimonial</a>
+                  <Link to="/testimonials">Testimonial</Link>
                 </li>
                 <li>
-                  <a href="/about-us">About Us</a>
+                  <Link to="/about-us">About Us</Link>
                 </li>
                 <li>
-                  <a href="/team">Team</a>
+                  <Link to="/team">Team</Link>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>

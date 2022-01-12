@@ -12,6 +12,10 @@ export function TestimonialCard({ item }) {
   const navigate = useNavigate();
   const [onOpen, setOnOpen] = React.useState(false);
   const [onReadText, setOnReadText] = React.useState("Read More");
+  const [countHeart, setCountHeart] = React.useState([]);
+  const [countSadCry, setCountSadCry] = React.useState([]);
+  const [countThumbsUp, setCountThumbsUp] = React.useState([]);
+
   const handleOnClickRead = () => {
     setOnOpen(!onOpen);
     if (onReadText === "Read More") {
@@ -35,22 +39,104 @@ export function TestimonialCard({ item }) {
     })
       .then((response) => {
         if (response.status === 200) {
-          console.log("Reaction added");
+          getReactHeart();
+          getReactSadCry();
+          getReactThumbsUp();
         } else {
-          console.log("Reaction not added");
+          console.log("error");
         }
       })
       .catch((error) => {
         console.log(error);
       });
   };
+  // reaction functions call
+  const getReactHeart = async () => {
+    await fetch(api + "reviews/reactions/count", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        reaction: "heart",
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          return res.json();
+        } else {
+          console.log("error");
+        }
+      })
+      .then((results) => {
+        setCountHeart(results.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  const getReactSadCry = async () => {
+    await fetch(api + "reviews/reactions/count", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        reaction: "sadcry",
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          return res.json();
+        } else {
+          console.log("error");
+        }
+      })
+      .then((results) => {
+        setCountSadCry(results.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  const getReactThumbsUp = async () => {
+    await fetch(api + "reviews/reactions/count", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        reaction: "thumbsup",
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          return res.json();
+        } else {
+          console.log("error");
+        }
+      })
+      .then((results) => {
+        setCountThumbsUp(results.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
+  // get onload reactions
+  React.useEffect(() => {
+    getReactHeart();
+    getReactSadCry();
+    getReactThumbsUp();
+  }, []);
   return (
     <div className="col-lg-6 mt-4">
       <div className="testimonial-card">
-        <div className="testimonial-card-title mt-2 mb-4">
-          {item.client_name}
-        </div>
+        <div className="testimonial-card-title mt-2 mb-4">{item.name}</div>
         <div
           className={
             !onOpen
@@ -58,7 +144,7 @@ export function TestimonialCard({ item }) {
               : "testimonial-card-text-open my-2"
           }
         >
-          {item.testimony}
+          {item.review}
         </div>
         <button className="read-btn" onClick={() => handleOnClickRead()}>
           {onReadText}
@@ -80,21 +166,34 @@ export function TestimonialCard({ item }) {
             onClick={() => handleReaction("heart", item.id)}
           >
             <FontAwesomeIcon icon={faHeart} size="xs" />
-            <div className="score">0</div>
+            <div className="score">
+              {countHeart &&
+                countHeart.filter((iHeart) => iHeart.review_id === item.id)
+                  .length}
+            </div>
           </button>
           <button
             className="btn-reaction mx-2"
-            onClick={() => handleReaction("thumbs_up", item.id)}
+            onClick={() => handleReaction("thumbsup", item.id)}
           >
             <FontAwesomeIcon icon={faThumbsUp} size="xs" />
-            <div className="score">0</div>
+            <div className="score">
+              {countThumbsUp &&
+                countThumbsUp.filter(
+                  (iThumbsUp) => iThumbsUp.review_id === item.id
+                ).length}
+            </div>
           </button>
           <button
             className="btn-reaction mx-2"
-            onClick={() => handleReaction("sad_cry", item.id)}
+            onClick={() => handleReaction("sadcry", item.id)}
           >
             <FontAwesomeIcon icon={faSadCry} size="xs" />
-            <div className="score">0</div>
+            <div className="score">
+              {countSadCry &&
+                countSadCry.filter((iSadCry) => iSadCry.review_id === item.id)
+                  .length}
+            </div>
           </button>
         </div>
       </div>

@@ -20,6 +20,8 @@ import LoaderComponent from "./components/loader/loader.component";
 import TestimonialSubPage from "./sub-pages/testimonials.sub";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 import TeamPage from "./pages/team.page";
+import EventSub from "./sub-pages/events.sub";
+import ScrollToTop from "./components/scroll.component";
 
 function App() {
   const [currentTimeOut, setCurrentTimeOut] = React.useState(true);
@@ -32,6 +34,7 @@ function App() {
   return (
     <div>
       <Router>
+        <ScrollToTop />
         <TopHeader />
         <HeaderComponent />
         <Routes>
@@ -43,10 +46,7 @@ function App() {
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/team" element={<TeamPage />} />
-          <Route
-            path="/testimonials/reviews/:id"
-            element={<TestimonialSubPage />}
-          />
+          <Route path="/events/event_view/:id" element={<EventSub />} />
         </Routes>
         <FooterComponent />
       </Router>

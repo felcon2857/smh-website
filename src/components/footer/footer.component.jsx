@@ -11,7 +11,7 @@ class FooterComponent extends React.Component {
   }
   render() {
     return (
-      <div className="footer">
+      <div className="footer py-5">
         <Container>
           <div className="footer-info-section pb-3">
             <div className="row align-items-center">

@@ -1,21 +1,49 @@
 import React from "react";
 import { Accordion, Carousel, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { TestimonialCard } from "../components/cards/testimonial.card";
-import { testimonial } from "../data/testimonial.data";
-// import { Link } from "react-router-dom";
+import { api } from "../services/api";
 
 class HomePage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: testimonial,
+      testimonialData: [],
     };
   }
   componentDidMount = () => {
     document.title = "STA. MONICA HOMECARE";
+    this.onRenderReview();
+  };
+  onRenderReview = async () => {
+    await fetch(api + "reviews/status", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        status: "published",
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          return res.json();
+        } else {
+          console.log("error");
+        }
+      })
+      .then((results) => {
+        this.setState({
+          testimonialData: results.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   renderTestimonials() {
-    return this.state.data.map((testimony, i) => (
+    return this.state.testimonialData.map((testimony, i) => (
       <TestimonialCard key={i} item={testimony} />
     ));
   }
@@ -53,13 +81,13 @@ class HomePage extends React.Component {
                         huge impact on your finances.
                       </p>
                       <div className="pt-3">
-                        <a
+                        <Link
                           className="theme-btn fade-in-bottom3"
-                          href="/services"
+                          to="/services"
                           type="button"
                         >
                           GET STARTED
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -95,13 +123,13 @@ class HomePage extends React.Component {
                         comfort of your home.
                       </p>
                       <div className="pt-3">
-                        <a
+                        <Link
                           className="theme-btn fade-in-bottom3"
-                          href="/doctors"
+                          to="/doctors"
                           type="button"
                         >
                           SCHEDULE NOW
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -137,13 +165,13 @@ class HomePage extends React.Component {
                         professionals who can take care of you round the clock.
                       </p>
                       <div className="pt-3">
-                        <a
+                        <Link
                           className="theme-btn fade-in-bottom3"
-                          href="/services"
+                          to="/services"
                           type="button"
                         >
                           OUR SERVICES
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -178,89 +206,20 @@ class HomePage extends React.Component {
                         trained to practice the utmost of safety measures.
                       </p>
                       <div className="pt-3">
-                        <a
+                        <Link
                           className="theme-btn fade-in-bottom3"
-                          href="/services"
+                          to="/services"
                           type="button"
                         >
                           LOOK FOR A DOCTOR
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
                 </Container>
               </Carousel.Caption>
             </Carousel.Item>
-
-            {/* carousel 5*/}
-            {/* <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/assets/doctor-bg.png"
-                alt="doctor-bg"
-                className="desktop-image"
-              />
-              <img
-                className="d-block w-100"
-                src="/assets/doctor-bg-mobile.png"
-                alt="doctor-bg"
-                className="mobile-image"
-              />
-              <Carousel.Caption>
-                <Container>
-                  <div className="row align-items-center landing-page-promise ">
-                    <div className="col-lg-6">
-                      <h1 className="landing-page-promise-title fade-in-bottom">
-                        Get a free <span>Medical Advice</span> from our Doctors
-                      </h1>
-                      <p className="landing-page-promise-quote py-2 fade-in-bottom2">
-                        Aside from our various health-oriented services, you can
-                        actually TALK to our DOCTOR for FREE!
-                      </p>
-                      <div className="pt-3">
-                        <a
-                          className="theme-btn fade-in-bottom3"
-                          href="/doctors"
-                          type="button"
-                        >
-                          TALK TO OUR DOCTOR
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </Container>
-              </Carousel.Caption>
-            </Carousel.Item> */}
           </Carousel>
-          {/* dont use this section */}
-          <div className="landing-page-background">
-            {/* <div className="landing-page-background-image">
-              <Container>
-                <div className="row align-items-center landing-page-promise ">
-                  <div className="col-lg-6">
-                    <h1 className="landing-page-promise-title fade-in-bottom">
-                      <span>Healthcare</span> should not be expensive.
-                    </h1>
-                    <p className="landing-page-promise-quote my-3 fade-in-bottom2">
-                      We provide quality medical services within the comfort of
-                      your home. We have profesionals that can take care of you
-                      round the clock.
-                    </p>
-                    <div className="my-">
-                      <Link
-                        className="theme-btn fade-in-bottom3"
-                        to="/doctors"
-                        type="button"
-                      >
-                        Make an Appointment
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </Container>
-            </div> */}
-          </div>
-          {/* dont use this section */}
         </div>
 
         {/* after state */}
@@ -396,90 +355,8 @@ class HomePage extends React.Component {
                 Choose from a wide range of Balay Atipan services:
               </h4>
             </div>
-            {/* <img
-              src="/assets/graph-img.png"
-              alt="graph-img"
-              className="img-after"
-            /> */}
+
             <div className="mb-5 list-of-service container">
-              {/* disabled */}
-              {/* first row */}
-              <div className="row">
-                {/* CARE KIT */}
-                {/* <div className="col-lg-3">
-                  <div className="list-of-service-container">
-                    <div className="list-of-service-img">
-                      <img src="/assets/consult.png" alt="consult-icon" />
-                    </div>
-                    <div className="list-of-service-text mt-4">CARE KIT</div>
-                  </div>
-                </div> */}
-                {/* 10-DAY CARE PACKAGE */}
-                {/* <div className="col-lg-3">
-                  <div className="list-of-service-container">
-                    <div className="list-of-service-img">
-                      <img src="/assets/visit.png" alt="visit-icon" />
-                    </div>
-                    <div className="list-of-service-text mt-4">
-                      10-DAY <br />
-                      CARE PACKAGE
-                    </div>
-                  </div>
-                </div> */}
-                {/* WOUND CARE */}
-                {/* <div className="col-lg-3">
-                  <div className="list-of-service-container">
-                    <div className="list-of-service-img">
-                      <img src="/assets/virtual.png" alt="virtual-icon" />
-                    </div>
-                    <div className="list-of-service-text mt-4">WOUND CARE</div>
-                  </div>
-                </div> */}
-                {/* NON-COVID I.V. THERAPY */}
-                {/* <div className="col-lg-3">
-                  <div className="list-of-service-container">
-                    <div className="list-of-service-img">
-                      <img
-                        src="/assets/medicine-icon.png"
-                        alt="medicine-icon"
-                      />
-                    </div>
-                    <div className="list-of-service-text mt-4">
-                      NON-COVID I.V.
-                      <br /> THERAPY
-                    </div>
-                  </div>
-                </div> */}
-              </div>
-              {/* disabled */}
-              {/* disabled */}
-              {/* 2nd row */}
-              <div className="row">
-                {/* COVID I.V. THERAPY */}
-                {/* <div className="col-lg-3 mt-2">
-                  <div className="list-of-service-container">
-                    <div className="list-of-service-img">
-                      <img src="/assets/consult.png" alt="consult-icon" />
-                    </div>
-                    <div className="list-of-service-text mt-4">
-                      COVID I.V. THERAPY
-                    </div>
-                  </div>
-                </div> */}
-                {/* COVID THERAPY WITH CAREGIVER */}
-                {/* <div className="col-lg-3 mt-2">
-                  <div className="list-of-service-container">
-                    <div className="list-of-service-img">
-                      <img src="/assets/visit.png" alt="visit-icon" />
-                    </div>
-                    <div className="list-of-service-text mt-4">
-                      COVID THERAPY <br />
-                      WITH CAREGIVER
-                    </div>
-                  </div>
-                </div> */}
-              </div>
-              {/* disabled */}
               {/* new section */}
               <div className="row">
                 <div className="col-lg-6">
@@ -567,9 +444,9 @@ class HomePage extends React.Component {
               </div>
             </div>
             <div className="text-center my-3">
-              <a href="/services" className="theme-btn my-3" type="button">
+              <Link to="/services" className="theme-btn my-3" type="button">
                 Learn More
-              </a>
+              </Link>
             </div>
           </Container>
         </div>
@@ -588,13 +465,13 @@ class HomePage extends React.Component {
                 {this.renderTestimonials()}
               </div>
               <div className="text-center my-3">
-                <a
-                  href="/testimonials"
+                <Link
+                  to="/testimonials"
                   className="theme-btn my-3"
                   type="button"
                 >
                   View All Testimonial
-                </a>
+                </Link>
               </div>
             </div>
           </Container>
@@ -607,10 +484,10 @@ class HomePage extends React.Component {
               <h4 className="text-center my-2">Ready to inquire, manage</h4>
             </div>
             <div className="my-3">
-              <div className="text-center my-3">
-                <a href="/doctors" className="theme-btn my-3" type="button">
+              <div className="text-center py-3">
+                <Link to="/doctors" className="theme-btn my-3" type="button">
                   Make an Appointment Now!
-                </a>
+                </Link>
               </div>
             </div>
           </Container>
