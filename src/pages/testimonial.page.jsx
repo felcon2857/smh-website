@@ -56,7 +56,7 @@ class TestimonialPage extends React.Component {
     return (
       <div id="testimonial">
         <PageHeader
-          page_title="Testimonial"
+          page_title="Testimonials"
           tagline="See client feedbacks about our services"
         />
         <div className="bg-lighter">
