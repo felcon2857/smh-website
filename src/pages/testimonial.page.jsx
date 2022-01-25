@@ -106,8 +106,13 @@ class TestimonialPage extends React.Component {
     return (
       <div id="testimonial">
         <PageHeader
+<<<<<<< HEAD
           page_title="Testimonial"
           tagline="Read clients' feedback about our services"
+=======
+          page_title="Testimonials"
+          tagline="See client feedbacks about our services"
+>>>>>>> 1a0161419fc3340be7bbb3b02418ad1229808226
         />
         <div className="bg-lighter">
           <Container>
