@@ -57,13 +57,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/image-bg.png"
+                src="/assets/image-bg.jpg"
                 alt="image-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/image-bg-mobile.png"
+                src="/assets/image-bg-mobile.jpg"
                 alt="image-bg"
                 className="mobile-image"
               />
@@ -99,14 +99,14 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/services-bg.png"
-                alt="services-bg"
+                src="/assets/homecare-bg.jpg"
+                alt="homecare-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/services-bg-mobile.png"
-                alt="services-bg"
+                src="/assets/homecare-bg-mobile.jpg"
+                alt="homecare-bg"
                 className="mobile-image"
               />
 
@@ -141,13 +141,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/services-bg.png"
+                src="/assets/services-bg.jpg"
                 alt="services-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/services-bg-mobile.png"
+                src="/assets/services-bg-mobile.jpg"
                 alt="services-bg"
                 className="mobile-image"
               />
@@ -183,13 +183,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/doctor-bg.png"
+                src="/assets/doctor-bg.jpg"
                 alt="doctor-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/doctor-bg-mobile.png"
+                src="/assets/doctor-bg-mobile.jpg"
                 alt="doctor-bg"
                 className="mobile-image"
               />
@@ -237,9 +237,9 @@ class HomePage extends React.Component {
             {/* mission vision */}
             <div className="row">
               <div className="col-lg-6">
-                <div className="card-item py-4 px-5 fade-in-bottom">
+                <div className="card-item py-4 fade-in-bottom">
                   <img
-                    src="/assets/eye-icon.png"
+                    src="/assets/vision.png"
                     alt="eye-icon"
                     className="img-icon"
                   />
@@ -253,9 +253,9 @@ class HomePage extends React.Component {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="card-item py-4 px-5 fade-in-bottom">
+                <div className="card-item py-4 fade-in-bottom">
                   <img
-                    src="/assets/target-icon.png"
+                    src="/assets/mission.png"
                     alt="target-icon"
                     className="img-icon"
                   />
@@ -269,72 +269,136 @@ class HomePage extends React.Component {
             </div>
             {/* goals */}
             <div className="row">
-              <div className="col-lg-6">
+              {/* <div className="col-lg-6">
                 <div className="image-container-left">
                   <img src="/assets/image-goal.png" alt="image-goal" />
                 </div>
-              </div>
-              <div className="col-lg-6">
-                <div className="card-item-colored py-5 fade-in-bottom">
-                  <h2 className="card-item-title mb-3">Our Values</h2>
+              </div> */}
+              <div className="col-lg-12">
+                <div className="py-5 fade-in-bottom">
+                  <img
+                    src="/assets/values.png"
+                    alt="values-icon"
+                    className="img-icon"
+                  />
+                  <h2 className="card-item-title mb-4">Our Values</h2>
                   <div className="card-item-content">
-                    <p>
-                      {/* Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed
-                      dinonumy eirmod tempor invidunt ut labore. */}
-                    </p>
-                    {/* goal in accordion */}
-                    <Accordion defaultActiveKey="0">
-                      <Accordion.Item eventKey="0">
-                        <Accordion.Header>INTEGRITY</Accordion.Header>
-                        <Accordion.Body>
-                          We do what is right even when no one is looking
-                        </Accordion.Body>
-                      </Accordion.Item>
-
-                      <Accordion.Item eventKey="1">
-                        <Accordion.Header>TEAMWORK</Accordion.Header>
-                        <Accordion.Body>We think and act as one</Accordion.Body>
-                      </Accordion.Item>
-
-                      <Accordion.Item eventKey="2">
-                        <Accordion.Header>DEDICATION</Accordion.Header>
-                        <Accordion.Body>
-                          always on call, we put our hearts and collective minds
-                          into your well-being.
-                        </Accordion.Body>
-                      </Accordion.Item>
-
-                      <Accordion.Item eventKey="3">
-                        <Accordion.Header>RESPECT</Accordion.Header>
-                        <Accordion.Body>
-                          We acknowledge you and your family and make sure you
-                          are included in decisions about your healthcare
-                        </Accordion.Body>
-                      </Accordion.Item>
-
-                      <Accordion.Item eventKey="4">
-                        <Accordion.Header>COMPASSION</Accordion.Header>
-                        <Accordion.Body>
-                          We are sensitive and concerned about you and your
-                          well-being.
-                        </Accordion.Body>
-                      </Accordion.Item>
-
-                      <Accordion.Item eventKey="5">
-                        <Accordion.Header>CUSTOMIZED </Accordion.Header>
-                        <Accordion.Body>
-                          We will approach your healthcare to suit your needs.
-                        </Accordion.Body>
-                      </Accordion.Item>
-
-                      <Accordion.Item eventKey="6">
-                        <Accordion.Header>CONFIDENTIAL</Accordion.Header>
-                        <Accordion.Body>
-                          Your information is safe with us.
-                        </Accordion.Body>
-                      </Accordion.Item>
-                    </Accordion>
-                    {/* end goal in accordion */}
+                    <p></p>
+                    {/* values */}
+                    <div className="row">
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            INTEGRITY
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            We do what is right even when no one is looking
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            TEAMWORK
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            we think and act as one
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            DEDICATION
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            always on call, we put our hearts and collective
+                            minds into your well-being
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            RESPECT
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            we acknowledge you and your family and make sure you
+                            are included in decisions about your healthcare
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            COMPASSION
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            We are sensitive and concerned about you and your
+                            well-being.
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            CUSTOMIZED
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            we will approach your healthcare to suit your
+                            personal needs
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-3 my-2">
+                        <div className="card-colored-hover h-height">
+                          <img
+                            src="/assets/vcard-icon.png"
+                            alt="target-icon"
+                            width={32}
+                          />
+                          <div className="card-colored-hover-title px-2">
+                            CONFIDENTIAL
+                          </div>
+                          <div className="card-colored-hover-text px-2">
+                            your information is safe with us
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {/* end values */}
                   </div>
                 </div>
               </div>
@@ -369,21 +433,21 @@ class HomePage extends React.Component {
                       </div>
                     </div>
                     <div className="icon-package">
-                      <img src="/assets/consult.png" alt="consult-icon" />
+                      <img src="/assets/carekit.png" alt="consult-icon" />
                     </div>
                   </div>
                   {/* 10-DAY CARE PACKAGE*/}
                   <div className="d-flex align-items-center justify-content-end my-5 mx-4">
                     <div className="title-package-container px-3">
                       <div className="title-package text-right">
-                        10-DAY's CARE PACKAGE
+                        10-DAY CARE PACKAGE
                       </div>
                       <div className="sub-title-package text-right">
-                        Balay Atipan "10 DAY's CARE" Service.
+                        Balay Atipan "10 DAY CARE" Service.
                       </div>
                     </div>
                     <div className="icon-package">
-                      <img src="/assets/visit.png" alt="visit-icon" />
+                      <img src="/assets/package.png" alt="visit-icon" />
                     </div>
                   </div>
                   {/* WOUND CARE*/}
@@ -395,7 +459,7 @@ class HomePage extends React.Component {
                       </div>
                     </div>
                     <div className="icon-package">
-                      <img src="/assets/virtual.png" alt="virtual-icon" />
+                      <img src="/assets/woundcare.png" alt="virtual-icon" />
                     </div>
                   </div>
                 </div>
@@ -403,7 +467,7 @@ class HomePage extends React.Component {
                   {/* NON-COVID I.V. THERAPY*/}
                   <div className="d-flex align-items-center justify-content-start my-5 mx-4">
                     <div className="icon-package">
-                      <img src="/assets/virtual.png" alt="virtual-icon" />
+                      <img src="/assets/therapy.png" alt="virtual-icon" />
                     </div>
                     <div className="title-package-container px-3">
                       <div className="title-package">
@@ -417,7 +481,7 @@ class HomePage extends React.Component {
                   {/*   COVID I.V. THERAPY */}
                   <div className="d-flex align-items-center justify-content-start my-5 mx-4">
                     <div className="icon-package">
-                      <img src="/assets/consult.png" alt="consult-icon" />
+                      <img src="/assets/covid.png" alt="consult-icon" />
                     </div>
                     <div className="title-package-container px-3">
                       <div className="title-package">COVID I.V. THERAPY</div>
@@ -429,7 +493,7 @@ class HomePage extends React.Component {
                   {/* COVID THERAPY WITH CAREGIVER*/}
                   <div className="d-flex align-items-center justify-content-start my-5 mx-4">
                     <div className="icon-package">
-                      <img src="/assets/visit.png" alt="visit-icon" />
+                      <img src="/assets/caregiver.png" alt="visit-icon" />
                     </div>
                     <div className="title-package-container px-3">
                       <div className="title-package">
@@ -458,7 +522,7 @@ class HomePage extends React.Component {
                 What our client say?
               </h2>
               <h4 className="text-center fade-in-bottom2">
-                See client feedbacks about our services
+                Read clients' feedback about our services
               </h4>
               {/* testimonial card */}
               <div className="row my-5 mobile-mx pt-4">
@@ -470,7 +534,7 @@ class HomePage extends React.Component {
                   className="theme-btn my-3"
                   type="button"
                 >
-                  View All Testimonial
+                  VIEW ALL TESTIMONIALS
                 </Link>
               </div>
             </div>

@@ -107,13 +107,13 @@ class TestimonialPage extends React.Component {
       <div id="testimonial">
         <PageHeader
           page_title="Testimonial"
-          tagline="See client feedbacks about our services"
+          tagline="Read clients' feedback about our services"
         />
         <div className="bg-lighter">
           <Container>
             <div className="after-state-section-background py-5">
               <h4 className="text-center">
-                Give us your feedbacks and let us know what you think about our
+                Give us your feedback and let us know what you think about our
                 services.
               </h4>
               <div className="pt-4 text-center">

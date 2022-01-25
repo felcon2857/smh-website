@@ -31,15 +31,15 @@ class AboutPage extends React.Component {
               <div className="col-lg-7">
                 <div className="text-title my-3">What is Balay Atipan?</div>
                 <div className="text-paragraph my-3">
-                  Balay Atipan is the Ilonggo term for Home Care. It is an apt
-                  name for the premier comprehensive online homecare service in
-                  the province of Negros Occidental, Philippines, where Ilonggo
-                  is spoken.
+                  <i className="fw-bold">Balay Atipan</i> is the Ilonggo term
+                  for Home Care. It is an apt name for the premier comprehensive
+                  online homecare service in the province of Negros Occidental,
+                  Philippines, where Ilonggo is spoken.
                 </div>
                 <div className="text-paragraph my-3">
                   This homecare service was established in 2021 by a group of
                   renowned health and medical professionals based in Bacolod
-                  City. It was borne out of a pressing need of some patients who
+                  City. It was born out of a pressing need of some patients who
                   would rather recover from illness or injury in the comfort of
                   their own homes.
                 </div>
@@ -73,7 +73,7 @@ class AboutPage extends React.Component {
                   <div className="card-colored-hover d-flex align-items-top my-2">
                     <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                     <div className="card-colored-hover-text px-2">
-                      Through our team of highly trained, experienced, and
+                      Through our team of highly trained, experienced and
                       dedicated health and medical professionals, we will
                       provide quality, practical and cost-effective home-care
                       services which meet the needs of our patients and their
@@ -90,7 +90,7 @@ class AboutPage extends React.Component {
                   <div className="card-colored-hover-title px-2">INTEGRITY</div>
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">
-                    We do what is right even when no one is looking
+                    We do what is right even when no one is looking.
                   </div>
                 </div>
 
@@ -98,7 +98,7 @@ class AboutPage extends React.Component {
                   <div className="card-colored-hover-title px-2">TEAMWORK</div>
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">
-                    we think and act as one
+                    we think and act as one.
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@ class AboutPage extends React.Component {
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">
                     always on call, we put our hearts and collective minds into
-                    your well-being
+                    your well-being.
                   </div>
                 </div>
 
@@ -117,8 +117,8 @@ class AboutPage extends React.Component {
                   <div className="card-colored-hover-title px-2">RESPECT</div>
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">
-                    we acknowledge you and your family and make sure you are
-                    included in decisions about your healthcare
+                    We acknowledge you and your family and make sure you are
+                    included in decisions about your healthcare.
                   </div>
                 </div>
 
@@ -139,7 +139,8 @@ class AboutPage extends React.Component {
                   </div>
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">
-                    we will approach your healthcare to suit your needs
+                    We will approach your healthcare to suit your personal
+                    needs.
                   </div>
                 </div>
 
@@ -149,7 +150,7 @@ class AboutPage extends React.Component {
                   </div>
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">
-                    your information is safe with u
+                    Your information is safe with us
                   </div>
                 </div>
               </div>

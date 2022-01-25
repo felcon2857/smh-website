@@ -31,10 +31,15 @@ class ServicesPage extends React.Component {
           <Container>
             <div className="row pt-5">
               <div className="after-state-section-background">
-                <h2 className="text-center">What We Provide for Your Health</h2>
+                <h2 className="text-center">
+                  {/* What We Provide for Your Health */}
+                  THE FIRST COMPREHENSIVE ONLINE HOMECARE <br />
+                  SYSTEM IN NEGROS OCCIDENTAL
+                </h2>
                 <div className="caption-text text-center">
-                  We provide quality medical services with medical professionals
-                  who can take care of you round the clock.
+                  {/* We provide quality medical services with medical professionals
+                  who can take care of you round the clock. */}
+                  Your Health. Your Home. Our Care.
                 </div>
               </div>
             </div>
