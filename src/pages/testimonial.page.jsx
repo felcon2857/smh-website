@@ -63,8 +63,7 @@ class TestimonialPage extends React.Component {
           <Container>
             <div className="after-state-section-background py-5">
               <h4 className="text-center">
-                Give us your feedbacks and let us know what you think about our
-                services.
+                Give us your feedback and let us know what you think about our services.
               </h4>
               <div className="pt-4 text-center">
                 <button
