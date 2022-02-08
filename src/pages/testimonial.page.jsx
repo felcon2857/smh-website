@@ -2,68 +2,128 @@ import React from "react";
 import { Container, Modal } from "react-bootstrap";
 import PageHeader from "../components/page-header/pageheader.component";
 import { TestimonialCard } from "../components/cards/testimonial.card";
-import { testimonial } from "../data/testimonial.data";
+import { api } from "../services/api";
+import * as moment from "moment";
 
 class TestimonialPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: testimonial,
+      testimonialData: [],
       checked: false,
       postDisabled: true,
-      tokenP: "",
       reviewerName: "",
       reviewerMessage: "",
+      successMsg: false,
     };
   }
 
   componentDidMount = () => {
     document.title = "TESTIMONIALS | STA. MONICA HOMECARE";
+    this.onRenderReview();
   };
   renderTestimonials() {
-    return this.state.data.map((testimony, i) => (
+    return this.state.testimonialData.map((testimony, i) => (
       <TestimonialCard key={i} item={testimony} />
     ));
   }
   onAgree = () => {
-    if (this.state.reviewerName && this.state.reviewerName !=="") {
+    if (this.state.reviewerName !== "" || this.state.reviewerName !== "") {
       this.setState({
         postDisabled: !this.state.postDisabled,
         checked: !this.state.checked,
       });
     }
   };
-  // onRenderReview = async () => {
-  //   fetch("http://localhost:5000/api/testimonial/", {
-  //     method: "POST",
-  //     headers: {
-  //       Accept: "application/json",
-  //       "Content-Type": "application/json",
-  //     },
-  //   }).then(res=>{
-  //     if(res.status === 200){
-  //       this.setState({
-  //         open: false,
-  //         reviewerName: "",
-  //         reviewerMessage: "",
-  //       });
-  //     }
-  //   })
-  // };
-  onPostSubmit = () => {};
+  onRenderReview = async () => {
+    await fetch(api + "reviews/status", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        status: "published",
+      }),
+    })
+      .then((res) => {
+        if (res.status === 200) {
+          return res.json();
+        } else {
+          console.log("error");
+        }
+      })
+      .then((results) => {
+        this.setState({
+          testimonialData: results.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  onPostSubmit = async () => {
+    if (
+      this.state.reviewerName === "" ||
+      this.state.reviewerName === "" ||
+      this.state.checked === false
+    ) {
+      alert("Please fill all the fields");
+    } else {
+      await fetch(api + "reviews/add", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: this.state.reviewerName,
+          review: this.state.reviewerMessage,
+          consent: "Yes",
+          post_date: moment().format("YYYY-MM-DD"),
+        }),
+      })
+        .then((res) => {
+          if (res.status === 200) {
+            alert("Review successfully posted. Thank you!");
+            this.setState({
+              reviewerMessage: "",
+              reviewerName: "",
+              checked: false,
+              open: false,
+            });
+          } else {
+            console.log("error");
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  };
   render() {
     let closeModal = () => this.setState({ open: false });
     return (
       <div id="testimonial">
         <PageHeader
+<<<<<<< HEAD
+          page_title="Testimonial"
+          tagline="Read clients' feedback about our services"
+=======
           page_title="Testimonials"
           tagline="See client feedbacks about our services"
+>>>>>>> 1a0161419fc3340be7bbb3b02418ad1229808226
         />
         <div className="bg-lighter">
           <Container>
             <div className="after-state-section-background py-5">
               <h4 className="text-center">
+<<<<<<< HEAD
                 Give us your feedback and let us know what you think about our services.
+=======
+                Give us your feedback and let us know what you think about our
+                services.
+>>>>>>> 8b669d2656cff6f3e37be11e6c042508ce9c87e8
               </h4>
               <div className="pt-4 text-center">
                 <button
@@ -103,7 +163,12 @@ class TestimonialPage extends React.Component {
                   type="text"
                   className="form-input-side"
                   placeholder="What would you like us to call you?"
-                  onChange={(reviewerName) => this.setState({ reviewerName })}
+                  onChange={(e) =>
+                    this.setState({
+                      reviewerName: e.target.value,
+                    })
+                  }
+                  value={this.state.reviewerName}
                 />
               </div>
               {/* review */}
@@ -116,9 +181,12 @@ class TestimonialPage extends React.Component {
                   rows="10"
                   className="form-input-side"
                   placeholder="Message"
-                  onChange={(reviewerMessage) =>
-                    this.setState({ reviewerMessage })
+                  onChange={(e) =>
+                    this.setState({
+                      reviewerMessage: e.target.value,
+                    })
                   }
+                  value={this.state.reviewerMessage}
                 ></textarea>
               </div>
               {/* agree */}
@@ -145,7 +213,6 @@ class TestimonialPage extends React.Component {
               <button
                 className="section-card-button-theme"
                 onClick={() => this.onPostSubmit()}
-                disabled={this.state.postDisabled}
               >
                 Post Review
               </button>

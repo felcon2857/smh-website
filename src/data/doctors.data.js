@@ -24,7 +24,7 @@ export const doctors = [
       "Thursday - 2PM",
       "Thursday - 4PM",
     ],
-    img: "/assets/dr_romella.JPG",
+    img: "/assets/dr_romella.jpg",
   },
   {
     id: "003",
@@ -35,7 +35,7 @@ export const doctors = [
       "Show you how it's possible to treat, prevent and often reverse many diseases and health problems with personalized lifestyle changes.",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
-    img: "/assets/dr_baraquia.JPG",
+    img: "/assets/dr_baraquia.jpg",
   },
   {
     id: "004",
@@ -52,7 +52,7 @@ export const doctors = [
       "Thursday - 2PM",
       "Thursday - 4PM",
     ],
-    img: "/assets/dr_ibanez.JPG",
+    img: "/assets/dr_ibanez.jpg",
   },
   {
     id: "005",
@@ -63,7 +63,7 @@ export const doctors = [
       "Medical doctor who specializes in kidney care and treating diseases of the kidneys.",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
-    img: "/assets/dr_david.JPG",
+    img: "/assets/dr_david.jpg",
   },
   {
     id: "006",
@@ -83,6 +83,6 @@ export const doctors = [
       "Friday - 2PM",
       "Friday - 5PM",
     ],
-    img: "/assets/dr_aguirre.JPG",
+    img: "/assets/dr_aguirre.jpg",
   },
 ];

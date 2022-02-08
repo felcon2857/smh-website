@@ -1,4 +1,9 @@
 @media only screen and (max-width: 600px) {
+  .form-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #393e46;
+  }
   .navbar-menu {
     display: none;
   }
@@ -223,6 +228,49 @@
   .image-container-about img {
     width: 380px;
     margin-top: 50px;
+  }
+  .tabs-grp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .footer-menu-section {
+    padding: 20px 0;
+    text-align: center;
+    display: none;
+  }
+  .footer-menu-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: block;
+  }
+  .footer-menu-section ul li {
+    margin-right: 20px;
+  }
+  .footer-menu-section ul li a {
+    color: #5d646f;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .footer-menu-section ul li a:hover {
+    color: #008d36;
+  }
+  .flex-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+    width: 100%;
+  }
+  .form-card {
+    padding: 0;
   }
 }
 

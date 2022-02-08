@@ -11,4 +11,10 @@ export const testimonial = [
     testimony:
       "Thanks to MJ, Sarah and our nursing team for their concerted, well coordinated with attending physician for orders and efficient efforts. Until then I go back to service after leave. God bless our patients and Balay Atipan's endeavors.",
   },
+  {
+    id: "3",
+    client_name: "BA Client 3",
+    testimony:
+      "Balay Atipan really made me fell i have family I could really lean on there when I dont have one.",
+  },
 ];

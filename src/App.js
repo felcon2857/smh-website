@@ -20,6 +20,10 @@ import LoaderComponent from "./components/loader/loader.component";
 import TestimonialSubPage from "./sub-pages/testimonials.sub";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 import TeamPage from "./pages/team.page";
+import EventSub from "./sub-pages/events.sub";
+import ScrollToTop from "./components/scroll.component";
+import FooterComponentsTwo from "./components/footer/footer2.component";
+import { Helmet } from "react-helmet";
 
 function App() {
   const [currentTimeOut, setCurrentTimeOut] = React.useState(true);
@@ -31,7 +35,22 @@ function App() {
   }
   return (
     <div>
+      <Helmet>
+        <html lang="en" />
+        <title>STA. MONICA HOMECARE</title>
+        <meta
+          name="description"
+          content="The first comprehensive online homecare system in negros occidental."
+        />
+        <meta
+          name="keywords"
+          content="balayatipan, balay atipan, balay-atipan, sta monica homecare solution,homecare"
+        />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://www.balayatipan.com" />
+      </Helmet>
       <Router>
+        <ScrollToTop />
         <TopHeader />
         <HeaderComponent />
         <Routes>
@@ -43,20 +62,17 @@ function App() {
           <Route path="/about-us" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/team" element={<TeamPage />} />
-          <Route
-            path="/testimonials/reviews/:id"
-            element={<TestimonialSubPage />}
-          />
+          <Route path="/events/event_view/:id" element={<EventSub />} />
         </Routes>
-        <FooterComponent />
+        <FooterComponentsTwo />
       </Router>
       <MessengerCustomerChat
         pageId="100231752530357"
         appId="1134817277258354"
         loggedInGreeting="Welcome To Balay Atipan"
-        greetingDialogDisplay="show"
-        onCustomerChatDialogShow={true}
-        shouldShowDialog={true}
+        // greetingDialogDisplay="show"
+        // onCustomerChatDialogShow={true}
+        // shouldShowDialog={true}
         themeColor="#00AF43"
       />
     </div>

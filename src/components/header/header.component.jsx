@@ -28,37 +28,99 @@ class HeaderComponent extends React.Component {
                 </div>
               </div>
             </a>
-            <input id="menu-toggle" type="checkbox" />
-            <label className="burger-menu" htmlFor="menu-toggle">
+            <input
+              id="menu-toggle"
+              type="checkbox"
+              checked={this.state.checked}
+            />
+            <label
+              className="burger-menu"
+              htmlFor="menu-toggle"
+              onClick={() => this.setState({ checked: !this.state.checked })}
+            >
               <FontAwesomeIcon icon={faBars} size="2x" color="#393E46" />
             </label>
             <div className="navbar-menu">
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link
+                    to="/"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a href="/services" onClick={this._handleHideMenu}>
+                  <Link
+                    to="/services"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/doctors">Doctors</a>
+                  <Link
+                    to="/doctors"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    Doctors
+                  </Link>
                 </li>
                 <li>
-                  <a href="/events">Events</a>
+                  <Link
+                    to="/events"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    Events
+                  </Link>
                 </li>
                 <li>
-                  <a href="/testimonials">Testimonial</a>
+                  <Link
+                    to="/testimonials"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    Testimonial
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about-us">About Us</a>
+                  <Link
+                    to="/about-us"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    About Us
+                  </Link>
                 </li>
                 <li>
-                  <a href="/team">Team</a>
+                  <Link
+                    to="/team"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    Team
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <Link
+                    to="/contact"
+                    onClick={() =>
+                      this.setState({ checked: !this.state.checked })
+                    }
+                  >
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>
