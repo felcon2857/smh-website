@@ -17,7 +17,7 @@ class TopHeader extends React.Component {
             <div className="top-header-content-left">
               <div className="top-header-content-left-item">
                 <FontAwesomeIcon icon={faPhoneAlt} />
-                &nbsp; Smart: 0999-9752665 | Globe: 0966-7384977 | Landline:
+                &nbsp; Smart: 0929-478-0834 | Globe: 0966-738-4977 | Landline:
                 (034) 468-5203
               </div>
             </div>

@@ -70,7 +70,9 @@ function AppointmentForm({ onCancelAction, theDoctor }) {
   return (
     <div className="row my-4 form-section">
       <div className="colg-lg-12">
-        <h6 className="header-form-title">Schedule An With {theDoctor}</h6>
+        <h6 className="header-form-title">
+          Schedule An Appointment With {theDoctor}
+        </h6>
         <p
           className="header-form-subtitle"
           style={{ color: "#00AF43", fontStyle: "italic" }}

@@ -37,14 +37,14 @@ function App() {
     <div>
       <Helmet>
         <html lang="en" />
-        <title>STA. MONICA HOMECARE</title>
+        <title>STA. MONICA HOMECARE SOLUTIONS INC.</title>
         <meta
           name="description"
           content="The first comprehensive online homecare system in negros occidental."
         />
         <meta
           name="keywords"
-          content="balayatipan, balay atipan, balay-atipan, sta monica homecare solution,homecare"
+          content="balayatipan, balay atipan, balay-atipan, sta monica homecare solution, homecare"
         />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://www.balayatipan.com" />
@@ -70,7 +70,7 @@ function App() {
         pageId="100231752530357"
         appId="1134817277258354"
         loggedInGreeting="Welcome To Balay Atipan"
-        // greetingDialogDisplay="show"
+        greetingDialogDisplay="show"
         // onCustomerChatDialogShow={true}
         // shouldShowDialog={true}
         themeColor="#00AF43"

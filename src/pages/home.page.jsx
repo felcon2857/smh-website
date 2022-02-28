@@ -12,7 +12,7 @@ class HomePage extends React.Component {
     };
   }
   componentDidMount = () => {
-    document.title = "STA. MONICA HOMECARE";
+    document.title = "STA. MONICA HOMECARE SOLUTIONS INC.";
     this.onRenderReview();
   };
   onRenderReview = async () => {
@@ -43,9 +43,9 @@ class HomePage extends React.Component {
       });
   };
   renderTestimonials() {
-    return this.state.testimonialData.map((testimony, i) => (
-      <TestimonialCard key={i} item={testimony} />
-    ));
+    return this.state.testimonialData
+      .slice(0, 4)
+      .map((testimony, i) => <TestimonialCard key={i} item={testimony} />);
   }
   render() {
     return (
@@ -57,13 +57,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/image-bg.jpg"
+                src="/assets/image-bg.png"
                 alt="image-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/image-bg-mobile.jpg"
+                src="/assets/image-bg-mobile.png"
                 alt="image-bg"
                 className="mobile-image"
               />
@@ -99,13 +99,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/homecare-bg.jpg"
+                src="/assets/homecare-bg.png"
                 alt="homecare-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/homecare-bg-mobile.jpg"
+                src="/assets/homecare-bg-mobile.png"
                 alt="homecare-bg"
                 className="mobile-image"
               />
@@ -141,13 +141,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/services-bg.jpg"
+                src="/assets/services-bg.png"
                 alt="services-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/services-bg-mobile.jpg"
+                src="/assets/services-bg-mobile.png"
                 alt="services-bg"
                 className="mobile-image"
               />
@@ -183,13 +183,13 @@ class HomePage extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/doctor-bg.jpg"
+                src="/assets/doctor-bg.png"
                 alt="doctor-bg"
                 className="desktop-image"
               />
               <img
                 className="d-block w-100"
-                src="/assets/doctor-bg-mobile.jpg"
+                src="/assets/doctor-bg-mobile.png"
                 alt="doctor-bg"
                 className="mobile-image"
               />
@@ -245,6 +245,20 @@ class HomePage extends React.Component {
                   />
                   <h2 className="card-item-title my-3">Our Vision</h2>
                   <p className="card-item-content">
+                    Be a premium provider of home-based health and wellness
+                    services.
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="card-item py-4 fade-in-bottom">
+                  <img
+                    src="/assets/mission.png"
+                    alt="target-icon"
+                    className="img-icon"
+                  />
+                  <h2 className="card-item-title my-3">Our Mission</h2>
+                  <p className="card-item-content">
                     Through our team of highly trained, experienced, and
                     dedicated health and medical professionals, we will provide
                     quality, practical and cost-effective home-care services
@@ -252,6 +266,8 @@ class HomePage extends React.Component {
                   </p>
                 </div>
               </div>
+            </div>
+            {/*   <div className="row">
               <div className="col-lg-6">
                 <div className="card-item py-4 fade-in-bottom">
                   <img
@@ -266,12 +282,28 @@ class HomePage extends React.Component {
                   </p>
                 </div>
               </div>
-            </div>
+              <div className="col-lg-6">
+                <div className="card-item py-4 fade-in-bottom">
+                  <img
+                    src="/assets/vision.png"
+                    alt="eye-icon"
+                    className="img-icon"
+                  />
+                  <h2 className="card-item-title my-3">Our Vision</h2>
+                  <p className="card-item-content">
+                    Through our team of highly trained, experienced, and
+                    dedicated health and medical professionals, we will provide
+                    quality, practical and cost-effective home-care services
+                    which meet the needs of our patients and their families.
+                  </p>
+                </div>
+              </div>
+            </div> */}
             {/* goals */}
             <div className="row">
               {/* <div className="col-lg-6">
                 <div className="image-container-left">
-                  <img src="/assets/image-goal.png" alt="image-goal" />
+                  <img src="/assets/image-goal2.png" alt="image-goal" />
                 </div>
               </div> */}
               <div className="col-lg-12">
@@ -286,7 +318,7 @@ class HomePage extends React.Component {
                     <p></p>
                     {/* values */}
                     <div className="row">
-                      <div className="col-lg-3 my-2">
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -301,7 +333,7 @@ class HomePage extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-3 my-2">
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -316,7 +348,7 @@ class HomePage extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-3 my-2">
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -332,7 +364,7 @@ class HomePage extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-3 my-2">
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -348,9 +380,9 @@ class HomePage extends React.Component {
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-3 my-2">
+                      {/* </div> */}
+                      {/* <div className="row"> */}
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -366,7 +398,7 @@ class HomePage extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-3 my-2">
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -382,7 +414,7 @@ class HomePage extends React.Component {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-3 my-2">
+                      <div className="col-lg-4 my-2">
                         <div className="card-colored-hover h-height">
                           <img
                             src="/assets/vcard-icon.png"
@@ -390,7 +422,7 @@ class HomePage extends React.Component {
                             width={32}
                           />
                           <div className="card-colored-hover-title px-2">
-                            CONFIDENTIAL
+                            CONFIDENTIALITY
                           </div>
                           <div className="card-colored-hover-text px-2">
                             your information is safe with us
@@ -462,6 +494,23 @@ class HomePage extends React.Component {
                       <img src="/assets/woundcare.png" alt="virtual-icon" />
                     </div>
                   </div>
+                  {/* SPECIAL PROCEDURES */}
+                  <div className="d-flex align-items-center justify-content-end my-5 mx-4">
+                    <div className="title-package-container px-3">
+                      <div className="title-package text-right">
+                        SPECIAL PROCEDURES
+                      </div>
+                      <div className="sub-title-package text-right">
+                        Balay Atipan "SPECIAL PROCEDURES" Service.
+                      </div>
+                    </div>
+                    <div className="icon-package">
+                      <img
+                        src="/assets/special-procedure.png"
+                        alt="virtual-icon"
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="col-lg-6">
                   {/* NON-COVID I.V. THERAPY*/}
@@ -504,6 +553,17 @@ class HomePage extends React.Component {
                       </div>
                     </div>
                   </div>
+                  <div className="d-flex align-items-center justify-content-start my-5 mx-4">
+                    <div className="icon-package">
+                      <img src="/assets/other-services.png" alt="visit-icon" />
+                    </div>
+                    <div className="title-package-container px-3">
+                      <div className="title-package">OTHER SERVICES</div>
+                      <div className="sub-title-package">
+                        "GET MORE" on Balay Atipan Services.
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -519,7 +579,7 @@ class HomePage extends React.Component {
           <Container>
             <div className="after-state-section-background my-5">
               <h2 className="text-center fade-in-bottom">
-                What our client say?
+                What our clients say?
               </h2>
               <h4 className="text-center fade-in-bottom2">
                 Read clients' feedback about our services
@@ -545,7 +605,7 @@ class HomePage extends React.Component {
           <Container>
             <div className="to-call-action-prefer my-3">
               <h2 className="text-center">READY? LET'S GET STARTED!</h2>
-              <h4 className="text-center my-2">Ready to inquire, manage</h4>
+              {/* <h4 className="text-center my-2">Ready to inquire, manage</h4> */}
             </div>
             <div className="my-3">
               <div className="text-center py-3">

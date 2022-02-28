@@ -10,7 +10,7 @@ class TeamPage extends React.Component {
     this.state = { data: team };
   }
   componentDidMount = () => {
-    document.title = "OUR TEAM | STA. MONICA HOMECARE";
+    document.title = "OUR TEAM | STA. MONICA HOMECARE SOLUTIONS INC.";
   };
   renderOfficers(department) {
     return this.state.data
@@ -32,15 +32,10 @@ class TeamPage extends React.Component {
           <Container>
             <div className="after-state-section-background my-5">
               {/* <div className="card-item-title text-center mb-3">Our Team</div> */}
-<<<<<<< HEAD
               <h2 className="text-center">
                 MEET THE BALAY ATIPAN HEALTH PROFESSIONALS
               </h2>
               <h4 className="text-center">Our team's ready to serve you.</h4>
-=======
-              <h2 className="text-center">Meet the BALAY ATIPAN Health Professionals</h2>
-              <h4 className="text-center">Our team is ready to serve you.</h4>
->>>>>>> 1a0161419fc3340be7bbb3b02418ad1229808226
             </div>
             <div className="row mb-2">
               <div className="col-lg-12">
@@ -63,6 +58,14 @@ class TeamPage extends React.Component {
             </div>
             <div className="row mb-2">
               {this.renderOfficers("MANAGEMENT & OPERATIONS")}
+            </div>
+            <div className="row mb-2">
+              <div className="col-lg-12">
+                <h4 className="text-team-title">NURSING STAFF</h4>
+              </div>
+            </div>
+            <div className="row mb-2">
+              {this.renderOfficers("NURSING STAFF")}
             </div>
           </Container>
         </div>

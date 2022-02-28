@@ -13,7 +13,7 @@ class ServicesPage extends React.Component {
     };
   }
   componentDidMount = () => {
-    document.title = "SERVICES | STA. MONICA HOMECARE";
+    document.title = "SERVICES | STA. MONICA HOMECARE SOLUTIONS INC.";
   };
   // renderServices() {
   //   return this.state.data.map((services, i) => (
@@ -27,9 +27,9 @@ class ServicesPage extends React.Component {
           page_title="Our Services"
           tagline="Your Health. Your Home. Our Care."
         />
-        <div className="py-5 bg-white">
-          <Container>
-            <div className="row pt-5">
+        <div className="py-5 bg-light">
+          <div className="container-fluid px-5">
+            <div className="row pt-5 px-5">
               <div className="after-state-section-background">
                 <h2 className="text-center">
                   {/* What We Provide for Your Health */}
@@ -44,57 +44,93 @@ class ServicesPage extends React.Component {
               </div>
             </div>
             <div className="row pt-5">
-              <ServicesTabs />
+              <div className="col-lg-9">
+                <ServicesTabs />
+              </div>
+              <div className="col-lg-3">
+                <div className="card-banner">
+                  <div className="mb-3">
+                    <div className="featured-card-bookmark-right">
+                      <span>NOT INCLUDED IN ALL PACKAGES!</span>
+                    </div>
+                  </div>
+
+                  <div className="card-banner-text">
+                    All Diagnostics, Laboratory Tests, Medication, Medical Fees,
+                    Physician's Home Visit, Additional Nurse/Caregiver services
+                    are <span>not included!</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* disabled */}
+          </div>
+        </div>
+        <div className="bg-white py-5">
+          <div className="container">
             <div className="row">
-              {/* <div className="col-lg-12">
-                <div className="card-item-colored py-5">
-                  <h2 className="card-item-title">CARE PACKAGE FOR 10 DAYS</h2>
-                  <div className="card-item-content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consetetur sadiping elitr, sed
-                      dinonumy eirmod tempor invidunt ut labore.
-                    </p>
-                    <div className="card-item-content-view my-3">
+              <div className="card-text-title">BABY/CHILD HOME CARE</div>
+              <div className="col-lg-6 my-3">
+                <div className="row">
+                  {/* 1 */}
+                  <div className="col-lg-4">
+                    <div className="img_baby_con">
                       <img
-                        src="/assets/consult-white.png"
-                        alt="consult-white"
+                        src="/assets/baby/baby1.jpg"
+                        alt="baby1"
+                        className="baby_img"
                       />
-                      <div>2 Tele-consultation with a Physician</div>
                     </div>
-                    <div className="card-item-content-view my-3">
-                      <img src="/assets/visit-white.png" alt="consult-white" />
-                      <div>2 times Nursing Visit (physical visit)</div>
-                    </div>
-                    <div className="card-item-content-view my-3">
+                  </div>
+                  {/* 2 */}
+                  <div className="col-lg-4">
+                    <div className="img_baby_con">
                       <img
-                        src="/assets/virtual-white.png"
-                        alt="consult-white"
+                        src="/assets/baby/baby2.jpg"
+                        alt="baby2"
+                        className="baby_img"
                       />
-                      <div>Virtual Nursing Assistance for 10 days</div>
                     </div>
-                    <p className="mt-5">
-                      <b>Note:</b>&nbsp; All other consultations, medicines and
-                      other medical needs will be billed separately
-                    </p>
-                    <p className="mb-3">
-                      For other concerns, please call 0999-9752665 or
-                      0966-7384977
-                    </p>
+                  </div>
+                  {/* 3*/}
+                  <div className="col-lg-4">
+                    <div className="img_baby_con">
+                      <img
+                        src="/assets/baby/baby3.jpg"
+                        alt="baby3"
+                        className="baby_img"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col-lg-6 my-3">
+                <div className="row">
+                  <div className="col-lg-4">
+                    <div className="img_baby_con">
+                      <img
+                        src="/assets/alejano.jpg"
+                        alt="baby1"
+                        className="baby_img"
+                      />
+                    </div>
+                    <div className="my-3">
+                      <div className="card-text-title">
+                        John P. Alejano, MD
+                        <div className="fw-bold">Pedia Surgeon</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div> */}
             </div>
-            {/* end disable */}
-          </Container>
+          </div>
         </div>
         {/* last to call aciton */}
         <div className="to-call-action bg-light p-5">
           <Container>
-            <div className="to-call-action-prefer my-3">
+            <div className="to-call-action-prefer mb-3">
               <h2 className="text-center">READY? LET'S GET STARTED!</h2>
-              <h4 className="text-center my-2">Ready to inquire, manage</h4>
+              {/* <h4 className="text-center my-2">Ready to inquire, manage</h4> */}
             </div>
             <div className="my-3">
               <div className="text-center py-3">

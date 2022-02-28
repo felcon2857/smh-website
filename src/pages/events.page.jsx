@@ -1,3 +1,5 @@
+import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Container, Modal } from "react-bootstrap";
 import { EventCard } from "../components/cards/event.card";
@@ -13,7 +15,7 @@ class EventsPage extends React.Component {
     };
   }
   componentDidMount = () => {
-    document.title = "EVENTS | STA. MONICA HOMECARE";
+    document.title = "EVENTS | STA. MONICA HOMECARE SOLUTIONS INC.";
     this.getEvents();
   };
   getEvents = async () => {
@@ -47,7 +49,7 @@ class EventsPage extends React.Component {
       <div id="events">
         <PageHeader
           page_title="Latest Events"
-          tagline="Be updated to our service and events"
+          tagline="Be updated with our events and activities"
         />
         <div className="py-5 bg-light">
           <Container>
@@ -56,35 +58,91 @@ class EventsPage extends React.Component {
             ) : (
               <div className="row py-5">
                 <div className="col-lg-12 py-3">
-                  <div className="h1 fw-bold text-muted">No Events Posted</div>
+                  <h1 className="text-center event-title">
+                    Balay Atipan Blessing Ceremony
+                    <div className="event-title-sub my-3">
+                      <FontAwesomeIcon icon={faCalendarAlt} />
+                      &nbsp; Dec 8, 2021
+                    </div>
+                  </h1>
+                  {/* <div className="event-img">
+                    <img src="/assets/events-bg.png" alt="events-bg" />
+                  </div> */}
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events1.JPG"
+                      alt="events1"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events2.JPG"
+                      alt="events2"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events3.JPG"
+                      alt="events3"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events4.JPG"
+                      alt="events4"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events5.JPG"
+                      alt="events5"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events6.JPG"
+                      alt="events6"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events7.JPG"
+                      alt="events7"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events8.JPG"
+                      alt="events8"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events9.JPG"
+                      alt="events9"
+                    />
+                  </div>
+                  <div className="img-wrapper">
+                    <img
+                      className="inner-img"
+                      src="/assets/events10.JPG"
+                      alt="events10"
+                    />
+                  </div>
                 </div>
               </div>
             )}
           </Container>
         </div>
-        {/* testimonial modal */}
-        <Modal
-          show={this.state.isOpenModal}
-          onHide={() => this.setState({ isOpenModal: false })}
-          aria-labelledby="ModalHeader"
-          size="lg"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="ModalHeader">
-              Give a review about our service
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Modal.Footer>
-              <button
-                className="section-card-button-theme-seamless mx-2"
-                onClick={() => this.setState({ isOpenModal: false })}
-              >
-                Close
-              </button>
-            </Modal.Footer>
-          </Modal.Body>
-        </Modal>
       </div>
     );
   }

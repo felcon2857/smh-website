@@ -145,6 +145,10 @@
   .list-of-service {
     margin: 0px auto;
   }
+  .row2 {
+    display: flex;
+    flex-flow: column-reverse;
+  }
   /* menu */
   #menu-toggle:checked ~ .navbar-menu {
     display: block;
@@ -272,6 +276,9 @@
   .form-card {
     padding: 0;
   }
+  .section-card-image {
+    margin-left: 0px !important;
+  }
 }
 
 /* small laptops */
@@ -365,16 +372,89 @@
   }
   .section-card-image {
     margin: 0px 0px 0px -20px;
-    padding-right: 30px !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: max-content;
   }
   .section-card-image img {
     background-color: #fafafa;
     border-radius: 5px;
-    width: 95%;
+    width: 180px;
+    height: 236px;
     border: 1px solid #e2ffed;
+  }
+  .icon-package {
+    /* width: 60px;
+    height: 60px; */
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    transition: all 0.4s ease-in-out;
+  }
+  .icon-package img {
+    width: 50px;
+  }
+  .featured-card-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: #393e46;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  .featured-card-sub {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5d646f;
+    line-height: 25px;
+  }
+  .featured-read-btn {
+    background-color: #00af43;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid #00af43;
+    padding: 7px 10px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+    text-transform: uppercase;
+  }
+  .card-banner-text {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    color: #393e46;
+    /* text-transform: uppercase; */
+  }
+
+  .card-banner-text span {
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    color: #00af43;
+    /* text-transform: uppercase; */
+    font-style: italic;
+  }
+  .featured-card-bookmark-right span {
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .image-container-left {
+    width: 0;
+    margin-top: 60px;
+  }
+  .baby_img {
+    width: 100%;
+    height: 100%;
+    max-width: 280px;
+  }
+  .pull-right {
+    float: right;
   }
 }

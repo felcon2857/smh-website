@@ -8,7 +8,9 @@ export function TeamCard({ item }) {
         <div className="card-user-info">
           <div className="card-user-info-name">{item.name}</div>
           <div className="card-user-info-position">
-            {item.position === "NA" ? item.department : item.position}
+            {item.position === "NA"
+              ? item.department == "BOARD OF DIRECTORS"
+              : item.position}
           </div>
         </div>
       </div>

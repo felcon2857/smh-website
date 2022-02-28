@@ -11,7 +11,9 @@ class AboutPage extends React.Component {
     super(props);
     this.state = { data: team };
   }
-
+  componentDidMount = () => {
+    document.title = "ABOUT-US | STA. MONICA HOMECARE SOLUTIONS INC.";
+  };
   render() {
     return (
       <div id="about-us">
@@ -56,10 +58,10 @@ class AboutPage extends React.Component {
           <Container>
             <div className="row px-1">
               <div className="col-lg-6 my-2">
-                {/* mission */}
-                <div className="my-3">
-                  <h2 className="card-item-title my-2">Our Mission</h2>
-                  <div className="card-colored-hover d-flex align-items-center my-2">
+                {/* vision */}
+                <div className="mt-3">
+                  <h2 className="card-item-title my-2">Our Vision</h2>
+                  <div className="card-colored-hover d-flex align-items-top my-2">
                     <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                     <div className="card-colored-hover-text px-2">
                       Be a premium provider of home-based health and wellness
@@ -67,10 +69,10 @@ class AboutPage extends React.Component {
                     </div>
                   </div>
                 </div>
-                {/* vision */}
-                <div className="mt-3">
-                  <h2 className="card-item-title my-2">Our Vision</h2>
-                  <div className="card-colored-hover d-flex align-items-top my-2">
+                {/* mission */}
+                <div className="my-3">
+                  <h2 className="card-item-title my-2">Our Mission</h2>
+                  <div className="card-colored-hover d-flex align-items-center my-2">
                     <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                     <div className="card-colored-hover-text px-2">
                       Through our team of highly trained, experienced and
@@ -146,7 +148,7 @@ class AboutPage extends React.Component {
 
                 <div className="card-colored-hover d-flex align-items-center my-2">
                   <div className="card-colored-hover-title px-2">
-                    CONFIDENTIAL
+                    CONFIDENTIALITY
                   </div>
                   <FontAwesomeIcon icon={faAngleRight} color="#00af43" />
                   <div className="card-colored-hover-text px-2">

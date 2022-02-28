@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ServiceCard({ item }) {
   return (
     <div className="col-lg-3 my-5">
-      <div className="service-card">
+      <div className="card-colored-hover">
         <div className="service-card-inner">
           <div className="d-flex justify-content-center">
             <div className="service-card-icon-container">

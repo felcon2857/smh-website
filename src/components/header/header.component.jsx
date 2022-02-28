@@ -45,9 +45,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Home
                   </Link>
@@ -55,9 +53,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/services"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Services
                   </Link>
@@ -65,9 +61,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/doctors"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Doctors
                   </Link>
@@ -75,9 +69,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/events"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Events
                   </Link>
@@ -85,9 +77,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/testimonials"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Testimonial
                   </Link>
@@ -95,9 +85,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/about-us"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     About Us
                   </Link>
@@ -105,9 +93,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/team"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Team
                   </Link>
@@ -115,9 +101,7 @@ class HeaderComponent extends React.Component {
                 <li>
                   <Link
                     to="/contact"
-                    onClick={() =>
-                      this.setState({ checked: !this.state.checked })
-                    }
+                    onClick={() => this.setState({ checked: false })}
                   >
                     Contact
                   </Link>

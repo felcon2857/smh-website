@@ -10,15 +10,12 @@ class ContactPage extends React.Component {
     this.state = {};
   }
   componentDidMount = () => {
-    document.title = "CONTACT | STA. MONICA HOMECARE";
+    document.title = "CONTACT | STA. MONICA HOMECARE SOLUTIONS INC.";
   };
   render() {
     return (
       <div id="contact">
-        <PageHeader
-          page_title="Contact Us"
-          tagline="Send us message for more inquiries"
-        />
+        <PageHeader page_title="Contact Us" tagline="Please let us help you" />
         <div className="py-5 bg-light">
           <Container>
             <div className="row">
@@ -26,10 +23,9 @@ class ContactPage extends React.Component {
               <div className="col-lg-6">
                 <div className="form-card">
                   <form action="" method="post">
-                    <div className="form-title">Get In touch with Us</div>
+                    <div className="form-title">Send us a Message</div>
                     <div className="form-sub-title mb-4">
-                      Please fill in your information and we will contact you in
-                      time.
+                      Please fill up and we will get back to you
                     </div>
                     {/* row1 */}
                     <div className="row mt-2">
@@ -103,9 +99,10 @@ class ContactPage extends React.Component {
               {/* other contact information */}
               <div className="col-lg-6">
                 <div className="row mt-2">
-                  <div className="form-title">Or call via the following #:</div>
+                  <div className="form-title">Call us</div>
                   <div className="form-sub-title mb-3">
-                    We are happy to speak with you and hear your concern.
+                    We are here to listen to your concern.
+                    {/* We are here to listen in your concern. */}
                   </div>
                   {/* smart number */}
                   <div className="col-lg-6">

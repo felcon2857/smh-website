@@ -3,6 +3,7 @@ import { faMobileAlt, faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import moment from "moment";
 
 function FooterComponentsTwo() {
   return (
@@ -71,8 +72,8 @@ function FooterComponentsTwo() {
               <div className="col-lg-4">
                 <div className="footer-brand-section">
                   <div className="footer-brand-section-text">
-                    Copyright &copy; Sta. Monica Homecare 2021. All rights
-                    Reserved.
+                    Copyright &copy; Sta. Monica Homecare{" "}
+                    {moment().format("YYYY")}. All rights Reserved.
                   </div>
                 </div>
               </div>
@@ -90,11 +91,11 @@ function FooterComponentsTwo() {
 
                   <a className="footer-contact-info-section-icon" href="/">
                     <FontAwesomeIcon icon={faMobileAlt} />
-                    &nbsp;Smart: 0999-9752665
+                    &nbsp;Smart: 0929-478-0834
                   </a>
                   <a className="footer-contact-info-section-icon" href="/">
                     <FontAwesomeIcon icon={faMobileAlt} />
-                    &nbsp; Globe: 0966-7384977
+                    &nbsp; Globe: 0966-738-4977
                   </a>
                   <a className="footer-contact-info-section-icon" href="/">
                     <FontAwesomeIcon icon={faPhoneAlt} />

@@ -165,7 +165,7 @@ export function TestimonialCard({ item }) {
             className="btn-reaction mx-2"
             onClick={() => handleReaction("heart", item.id)}
           >
-            <FontAwesomeIcon icon={faHeart} size="xs" />
+            <img src="/assets/heart-emoji.png" alt="heart-emoji" />
             <div className="score">
               {countHeart &&
                 countHeart.filter((iHeart) => iHeart.review_id === item.id)
@@ -176,7 +176,7 @@ export function TestimonialCard({ item }) {
             className="btn-reaction mx-2"
             onClick={() => handleReaction("thumbsup", item.id)}
           >
-            <FontAwesomeIcon icon={faThumbsUp} size="xs" />
+            <img src="/assets/like-emoji.png" alt="like-emoji" />
             <div className="score">
               {countThumbsUp &&
                 countThumbsUp.filter(
@@ -188,7 +188,7 @@ export function TestimonialCard({ item }) {
             className="btn-reaction mx-2"
             onClick={() => handleReaction("sadcry", item.id)}
           >
-            <FontAwesomeIcon icon={faSadCry} size="xs" />
+            <img src="/assets/sad-emoji.png" alt="sad-emoji" />
             <div className="score">
               {countSadCry &&
                 countSadCry.filter((iSadCry) => iSadCry.review_id === item.id)

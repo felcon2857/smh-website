@@ -35,7 +35,10 @@ export default function DoctorCard({ item }) {
         </div>
         <div className="col-lg-5 my-3">
           <div className="section-card-title">
-            <h3>{item.name}</h3>
+            <h3>
+              {item.name}
+              {item.master !== "" ? ", " + item.master : ""}
+            </h3>
           </div>
           <div className="info-section">
             <h5>{item.designation}</h5>

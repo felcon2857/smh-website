@@ -23,7 +23,7 @@ class DoctorPage extends React.Component {
     };
   }
   componentDidMount = () => {
-    document.title = "DOCTORS | STA. MONICA HOMECARE";
+    document.title = "DOCTORS | STA. MONICA HOMECARE SOLUTIONS INC.";
   };
   handleShowAppointment = (id_form) => {
     this.setState({
