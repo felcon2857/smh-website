@@ -2,10 +2,10 @@ export const doctors = [
   {
     id: "001",
     name: "Amador P. Aguirre Ill",
-    designation: "NEUROLOGY AND PSYCHIATRY | CLINICAL NEUROPHYSIOLOGY",
+    designation: ["NEUROLOGY AND PSYCHIATRY | CLINICAL NEUROPHYSIOLOGY"],
     email: "",
-    description:
-      "Specialists who examine and diagnose disorders of the nervous system such as neuromuscular disease, nerve entrapments, epilepsy, and ophthalmic illness.",
+    description: 
+      "Specializes in the treatment of the diseases of the brain and spinal cord, peripheral nerves and muscles. Neurological conditions include epilepsy, stroke, multiple sclerosis (MS) and Parkinson's disease.",
     scheduleSum: ["Mon-Tue 2:00 PM - 5:00 PM", "Thu-Fri 2:00 PM - 5:00 PM"],
     teleSchedule: [
       "Monday - 2PM",
@@ -23,10 +23,10 @@ export const doctors = [
   {
     id: "002",
     name: "John P. Alejano",
-    designation: "Pediatric Surgery",
+    designation: ["Pediatric Surgery"],
     email: "",
-    description:
-      "Doctors who specialize in treating children. They're trained to do operations on infants, children, and young adults.",
+    description: 
+      "Surgery for Infants and Children..",
     scheduleSum: ["By appointment"],
     teleSchedule: ["By appointment"],
     img: "/assets/alejano.jpg",
@@ -35,10 +35,10 @@ export const doctors = [
   {
     id: "003",
     name: "Leonard Baraquia",
-    designation: "INTERNAL MEDICINE | PULMONARY MEDICINE | LIFESTYLE MEDICINE",
+    designation: ["INTERNAL MEDICINE | PULMONARY MEDICINE | LIFESTYLE MEDICINE"],
     email: "",
     description:
-      "Show you how it's possible to treat, prevent and often reverse many diseases and health problems with personalized lifestyle changes.",
+      "As an internist, he specializes in the prevention, diagnosis, treatment and compassionate care of internal diseases primarily in adults.  Also included in his services are the diagnosis and management of disorders of respiratory system, including the lungs, upper airways, thoracic cavity, and chest wall. As a lifestyle medical doctor, he does therapeutic intervention (stress management, nutritive therapy, restorative sleep and others) to prevent, treat and often reverse chronic disease.",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
     img: "/assets/baraquia.jpg",
@@ -46,11 +46,11 @@ export const doctors = [
   },
   {
     id: "004",
-    name: "Helen Joyce B. Campus",
-    designation: "Internal Medicine | Gastroenterologist | Lifestyle Medicine",
+    name: "Helen Joyce B. Campos",
+    designation: ["INTERNIST | GASTROENTEROLOGIST | THERAPEUTIC ENDOSCOPIST & LIVER DISEASES SPECIALIST", "LIFESTYLE MEDICINE SPECIALIST for PHIL. COLLEGE and INTERNATIONAL BOARD of LIFESTYLE MEDICINE",  "FPCP, FPSG, FPSDE, DIPLOMATE PCLM and IPBM", "Diplomate-Fellow Philippine College of Physicians", "Philippine College of Gastroenterology and Digestive Endoscopy"],
     email: "",
     description:
-      "A Specialists who study the normal function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas, gallbladder, bile ducts and liver",
+      "A Specialist who study the normal function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas, gallbladder, bile ducts and liver",
     scheduleSum: ["By appointment"],
     teleSchedule: ["By appointment"],
     img: "/assets/campos.png",
@@ -59,10 +59,10 @@ export const doctors = [
   {
     id: "005",
     name: "Leonilo Del Carmen",
-    designation: "GENERAL SURGERY",
+    designation: ["GENERAL SURGERY"],
     email: "",
-    description:
-      "A Medical or Dental specialist that helps improve bodily function, appearance, or to repair unwanted ruptured areas.",
+    description: 
+      "Specializes in the entire surgical process, from diagnosis to the actual procedure to post-operative management. He is knowledgeable on the basic areas of surgery like the digestive tract, the abdomen and its contents, skin and soft tissue, head and neck, blood vessels and heart, the endocrine system (hormones and glands), surgical treatment of cancer, surgical management of traumatic injuries and care of critically ill patients with surgical needs.",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
     img: "/assets/del_carmen.jpg",
@@ -70,10 +70,10 @@ export const doctors = [
   },
   {
     id: "006",
-    name: "Geronimo P. Cequina Jr.",
-    designation: "INTERNAL MEDICINE",
+    name: "Geronimo P. Cequiña Jr. M.D., MPM, FPSMS",
+    designation: ["INTERNAL MEDICINE"],
     email: "",
-    description: "",
+    description: "As an internist, he specializes in the prevention, diagnosis, treatment and compassionate care of internal diseases primarily in adults.",
     scheduleSum: ["By appointment"],
     teleSchedule: ["By appointment"],
     img: "/assets/cequina.jpg",
@@ -82,10 +82,10 @@ export const doctors = [
   {
     id: "007",
     name: "John Rodsil C. David",
-    designation: "INTERNAL MEDICINE | NEPHROLOGY",
+    designation: ["INTERNAL MEDICINE | NEPHROLOGY"],
     email: "",
     description:
-      "Medical doctor who specializes in kidney care and treating diseases of the kidneys.",
+      "As an internist, he specializes in the prevention, diagnosis, treatment and compassionate care of internal diseases primarily in adults.  As a Nephrologist, he specializes in kidney care (renal physiology) and treatment of kidney diseases (renal pathophysiology) - from diet and medication to renal replacement therapy (dialysis and kidney transplantation).",
     scheduleSum: ["By Appoitment"],
     teleSchedule: ["By Appoitment"],
     img: "/assets/david.jpg",
@@ -95,10 +95,10 @@ export const doctors = [
     id: "008",
     name: "Melvin L. Ibanez",
     designation:
-      "INTERNAL MEDICINE-CARDIOVASCULAR | DISEASES GERIATRIC AND FAMILY MEDICINE",
+      ["INTERNAL MEDICINE-CARDIOVASCULAR | DISEASES GERIATRIC AND FAMILY MEDICINE"],
     email: "",
     description:
-      "Gives proceeding and comprehensive health care for the person and family over all ages, sexes, maladies, and parts of the body. The specialist,  who is ordinarily an essential care doctor.",
+      "As an internist, he specializes in the prevention, diagnosis, treatment and compassionate care of internal diseases primarily in adults.  As a Cardiologist, he specializes in the medical diagnosis and treatment of congenital heart defects, coronary artery disease, heart failure, valvular heart disease and electrophysiology.  In geriatrics, his focus is on the healthcare of elderly people through the prevention and treatment of their diseases and disabilities.   As a family physician, his focus is on the comprehensive health care for the person and the family across all ages, genders, diseases, and parts of the body.",
     scheduleSum: ["Mon-Fri 8:30 AM - 9:00 AM", "Mon-Fri 5:30 PM - 6:30 PM"],
     teleSchedule: [
       "Tuesday - 2PM",
@@ -111,11 +111,11 @@ export const doctors = [
   },
   {
     id: "009",
-    name: "Dolores Romella Tiples-Ruiz",
-    designation: "INTERNAL MEDICINE | INFECTIOUS DISEASE CONSULTANT",
+    name: "Dolores Rommela Tiples-Ruiz",
+    designation: ["INTERNAL MEDICINE | INFECTIOUS DISEASE CONSULTANT"],
     email: "",
     description:
-      "Specializes in internal medicine, managing sicknesses of the interior body. Diagnosis, treat, and compassionate care of grown-ups over the range of wellbeing to complex sickness.",
+      "As an internist, she specializes in the prevention, diagnosis, treatment and compassionate care of internal diseases primarily in adults.  As an Infectious Disease Consultant, she offers knowledge on the study of acute and chronic infections caused by bacteria, parasites, fungi and viruses, particularly the virus SARS-CoV-2 of COVID-19.",
     scheduleSum: ["Tue 2:00 PM - 4:00 PM", "Thu 2:00 PM - 4:00 PM"],
     teleSchedule: [
       "Tuesday - 2PM",
@@ -127,3 +127,4 @@ export const doctors = [
     master: "MD",
   },
 ];
+

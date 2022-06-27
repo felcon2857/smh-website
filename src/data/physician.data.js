@@ -55,4 +55,22 @@ export const physician = [
     img: "/assets/quisumbing.png",
     master: "MD",
   },
+
+  {
+    id: "008",
+    name: "Gil Joseph Octaviano, III",
+    designation: "DMD",
+    email: "",
+    img: "/assets/joctaviano.jpg",
+    master: "MD",
+  },
+
+  {
+    id: "009",
+    name: "Patrick John Labra",
+    designation: "Ear, Nose, Throat",
+    email: "",
+    img: "/assets/avatar-doctor.png",
+    master: "MD",
+  },
 ];

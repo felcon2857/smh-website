@@ -44,7 +44,7 @@ function App() {
         />
         <meta
           name="keywords"
-          content="balayatipan, balay atipan, balay-atipan, sta monica homecare solution, homecare"
+          content="balayatipan, balay atipan, balay-atipan, sta monica homecare solution, homecare, homecare philippines"
         />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://www.balayatipan.com" />

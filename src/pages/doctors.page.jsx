@@ -5,8 +5,10 @@ import { faStethoscope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { doctors } from "../data/doctors.data";
 import { physician } from "../data/physician.data";
+import { familyphysician } from "../data/familyphysician.data";
 import DoctorCard from "../components/cards/doctor.card";
 import { PhysicianCard } from "../components/cards/physician.card";
+import { FamilyPhysicianCard } from "../components/cards/familyphysician.card";
 
 class DoctorPage extends React.Component {
   constructor(props) {
@@ -14,6 +16,7 @@ class DoctorPage extends React.Component {
     this.state = {
       datad: doctors,
       datap: physician,
+      datafamilyphysician: familyphysician,
     };
   }
   componentDidMount = () => {
@@ -31,12 +34,18 @@ class DoctorPage extends React.Component {
     ));
   }
 
+  renderFamilyPhysician() {
+    return this.state.datafamilyphysician.map((doctors, i) => (
+      <FamilyPhysicianCard key={i} item={doctors} />
+    ));
+  }
+
   render() {
     return (
       <div id="doctors">
         <PageHeader
           page_title="Our Doctors and Affiliate Service Providers"
-          tagline="We have profesionals that can take care of you round the clock."
+          tagline="We have professionals that can take care of you round the clock."
         />
         {/* doctors area */}
         <div className="py-5 bg-light">
@@ -56,6 +65,8 @@ class DoctorPage extends React.Component {
             </div>
           </Container>
         </div>
+
+
         {/* physician */}
         <div className="bg-white py-5">
           <Container>
@@ -67,6 +78,21 @@ class DoctorPage extends React.Component {
             <div className="row">{this.renderPhysician()}</div>
           </Container>
         </div>
+
+
+        {/* family physician */}
+        <div className="bg-white py-5">
+          <Container>
+            <div className="section-title">
+              <FontAwesomeIcon icon={faStethoscope} size="lg" color="#00AF43" />
+              <h3 className="mx-3" style={{display:"flex"}}>AFFILIATE &nbsp;<h3 style={{color:"red"}}>FAMILY</h3>&nbsp; PHYSICIANS</h3>
+            </div>
+            <hr />
+            <div className="row">{this.renderFamilyPhysician()}</div>
+          </Container>
+        </div>
+
+
         {/* nurse affiliate */}
         <div className="bg-light py-5">
           <Container>
@@ -98,10 +124,14 @@ class DoctorPage extends React.Component {
               </div>
               {/* diagnostic 1 */}
             </div>
+
+
+
             <div className="section-title mt-3">
               <FontAwesomeIcon icon={faStethoscope} size="lg" color="#00AF43" />
               <h3 className="mx-3">AFFILIATE DIAGNOSTICS</h3>
             </div>
+
             <div className="row">
               <div className="col-lg-4 my-3">
                 <div className="card-user" style={{ height: "100%" }}>
@@ -146,6 +176,53 @@ class DoctorPage extends React.Component {
                   </div>
                 </div>
               </div>
+
+
+              <div className="col-lg-4 my-3">
+                <div className="card-user" style={{ height: "100%" }}>
+                  <img
+                    src="/assets/MJPsychotherapy.jpg"
+                    alt="health_horizon"
+                    className="card-user-img"
+                  />
+                  <div className="card-user-info">
+                    <div className="card-user-info-name">
+                      MJ Physiotherapy <br />
+                      Services
+                    </div>
+                    <div
+                      className="card-user-info-position"
+                      style={{ fontSize: "13px" }}
+                    >
+                      mjphysiotherapyservices@gmail.com | 09198501003
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* diagnostic 2 */}
+              
+              {/*<div className="col-lg-4 my-3">
+                <div className="card-user">
+                  <img
+                    src="/assets/healberg.jpg"
+                    alt="healberg"
+                    className="card-user-img"
+                  />
+                  <div className="card-user-info">
+                    <div className="card-user-info-name">
+                      HealBerg Lifestyle Medical <br /> Center {"&"} Clinics
+                      Inc.
+                    </div>
+                    <div
+                      className="card-user-info-position"
+                      style={{ fontSize: "13px" }}
+                    >
+                      healbergbacolod@gmail.com | 0916 769 6970
+                    </div>
+                  </div>
+                </div>
+              </div>*/}
+
             </div>
           </Container>
         </div>

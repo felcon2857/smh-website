@@ -35,7 +35,7 @@ class TeamPage extends React.Component {
               <h2 className="text-center">
                 MEET THE BALAY ATIPAN HEALTH PROFESSIONALS
               </h2>
-              <h4 className="text-center">Our team's ready to serve you.</h4>
+              <h4 className="text-center">Our team is ready to serve you.</h4>
             </div>
             <div className="row mb-2">
               <div className="col-lg-12">

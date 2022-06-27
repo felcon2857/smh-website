@@ -40,8 +40,18 @@ export default function DoctorCard({ item }) {
               {item.master !== "" ? ", " + item.master : ""}
             </h3>
           </div>
+
+
+
           <div className="info-section">
-            <h5>{item.designation}</h5>
+            {/*<h5>{item.designation}</h5>*/}
+
+            <ul>
+              {item.designation.map((designations, i) => (
+                  <li>{designations}</li>
+              ))}
+            </ul>
+
             {item.email == "" ? null : (
               <>
                 <div className="dots"></div>
@@ -52,7 +62,11 @@ export default function DoctorCard({ item }) {
               </>
             )}
           </div>
-          <div className="section-card-subtitle">{item.description}</div>
+
+
+
+          <div className="section-card-subtitle"><b>{item.description}</b></div>
+
           <div className="section-card-schedule">
             <h6>
               <FontAwesomeIcon icon={faCalendarCheck} size="lg" />
