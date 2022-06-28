@@ -219,6 +219,86 @@ class HomePage extends React.Component {
                 </Container>
               </Carousel.Caption>
             </Carousel.Item>
+
+
+
+
+            {/* carousel 5*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/baw1.png"
+                alt="baw1"
+                className="desktop-image"
+              />
+              {/*<img
+                className="d-block w-100"
+                src="/assets/baw1.png"
+                alt="baw1"
+                className="mobile-image"
+              />*/}
+
+            </Carousel.Item>
+
+
+            {/* carousel 6*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/baw2.png"
+                alt="baw2"
+                className="desktop-image"
+              />
+            </Carousel.Item>
+
+            {/* carousel 7*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/baw3.jpg"
+                alt="baw3"
+                className="desktop-image"
+              />
+            </Carousel.Item>
+
+            {/* carousel 8*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/baw4.png"
+                alt="baw4"
+                className="desktop-image"
+              />
+            </Carousel.Item>
+
+            {/* carousel 9*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/baw5.jpg"
+                alt="baw5"
+                className="desktop-image"
+              />
+            </Carousel.Item>
+
+            {/* carousel 10*/}
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="/assets/baw6.jpg"
+                alt="baw6"
+                className="desktop-image"
+              />
+            </Carousel.Item>
+
+
+
+
+
+
+
+
+
           </Carousel>
         </div>
 
