@@ -52,7 +52,7 @@ export default function DoctorCard({ item }) {
               ))}
             </ul>
 
-            {item.email == "" ? null : (
+            {item.email === "" ? null : (
               <>
                 <div className="dots"></div>
                 <a href="#">

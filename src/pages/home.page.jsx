@@ -208,7 +208,7 @@ class HomePage extends React.Component {
                       <div className="pt-3">
                         <Link
                           className="theme-btn fade-in-bottom3"
-                          to="/services"
+                          to="/doctors"
                           type="button"
                         >
                           LOOK FOR A DOCTOR
@@ -224,11 +224,11 @@ class HomePage extends React.Component {
 
 
             {/* carousel 5*/}
-            {/*<Carousel.Item>
-              <img
+            {/*<Carousel.Item>*/}
+              {/*<img
                 className="d-block w-100"
-                src="/assets/baw1.png"
-                alt="baw1"
+                src="/assets/fo1-bg.png"
+                alt="fo1"
                 className="desktop-image"
               />*/}
               {/*<img
@@ -237,7 +237,6 @@ class HomePage extends React.Component {
                 alt="baw1"
                 className="mobile-image"
               />*/}
-
             {/*</Carousel.Item>*/}
 
 
@@ -245,8 +244,8 @@ class HomePage extends React.Component {
             {/*<Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/assets/baw2.png"
-                alt="baw2"
+                src="/assets/fo2-bg.png"
+                alt="fo2"
                 className="desktop-image"
               />
             </Carousel.Item>*/}

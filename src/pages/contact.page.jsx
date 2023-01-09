@@ -102,48 +102,21 @@ class ContactPage extends React.Component {
                   <div className="form-title">Call us</div>
                   <div className="form-sub-title mb-3">
                     We are here to listen to your concern.
-                    {/* We are here to listen in your concern. */}
                   </div>
+
                   {/* smart number */}
                   <div className="col-lg-6">
-                    {/* smart */}
-                    <div className="card-colored-hover d-flex align-items-center my-2">
-                      <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
-                      <div className="card-colored-hover-title px-2">Smart</div>
-                      <div className="card-colored-hover-text2 px-2">
-                        (0929) 478 0834
-                      </div>
-                    </div>
-                    {/* smart 1 */}
                     <div className="card-colored-hover d-flex align-items-center my-2">
                       <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
                       <div className="card-colored-hover-title px-2">
-                        Smart 1
+                        {/*Smart*/}
+                        09294780834
                       </div>
                       <div className="card-colored-hover-text2 px-2">
-                        (0999) 975 2666
+                        {/*(0929) 478 0834*/}
                       </div>
                     </div>
-                    {/* smart 2 */}
-                    <div className="card-colored-hover d-flex align-items-center my-2">
-                      <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
-                      <div className="card-colored-hover-title px-2">
-                        Smart 2
-                      </div>
-                      <div className="card-colored-hover-text2 px-2">
-                        (0999) 975 2665
-                      </div>
-                    </div>
-                    {/* smart 3 */}
-                    <div className="card-colored-hover d-flex align-items-center my-2">
-                      <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
-                      <div className="card-colored-hover-title px-2">
-                        Smart 3
-                      </div>
-                      <div className="card-colored-hover-text2 px-2">
-                        (0999) 975 2653
-                      </div>
-                    </div>
+
                   </div>
                   {/* globe number */}
                   <div className="col-lg-6">
@@ -151,42 +124,24 @@ class ContactPage extends React.Component {
                     <div className="card-colored-hover d-flex align-items-center my-2">
                       <FontAwesomeIcon icon={faPhoneAlt} color="#00af43" />
                       <div className="card-colored-hover-title px-2">
-                        Landline
+                        Landline: +63 34 468 5203
                       </div>
                       <div className="card-colored-hover-text2 px-2">
-                        +63 34 468 5203
+                        {/*+63 34 468 5203*/}
                       </div>
                     </div>
+
                     {/* smart 1 */}
                     <div className="card-colored-hover d-flex align-items-center my-2">
-                      <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
+                      {/*<FontAwesomeIcon icon={faMobileAlt} color="#00af43" />*/}
                       <div className="card-colored-hover-title px-2">
-                        Globe 1
+                        Email: balay.atipan1011@gmail.com
                       </div>
                       <div className="card-colored-hover-text2 px-2">
-                        (0966) 738 4975
+                        {/*balay.atipan1011@gmail.com*/}
                       </div>
                     </div>
-                    {/* smart 2 */}
-                    <div className="card-colored-hover d-flex align-items-center my-2">
-                      <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
-                      <div className="card-colored-hover-title px-2">
-                        Globe 2
-                      </div>
-                      <div className="card-colored-hover-text2 px-2">
-                        (0966) 738 4977
-                      </div>
-                    </div>
-                    {/* smart 3 */}
-                    <div className="card-colored-hover d-flex align-items-center my-2">
-                      <FontAwesomeIcon icon={faMobileAlt} color="#00af43" />
-                      <div className="card-colored-hover-title px-2">
-                        Globe 3
-                      </div>
-                      <div className="card-colored-hover-text2 px-2">
-                        (0966) 738 4978
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>

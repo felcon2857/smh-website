@@ -252,6 +252,54 @@ class TestimonialPage extends React.Component {
           </Container>
           <div className="bg-lighter py-5 px-4">
             <div className="container py-5">
+              
+
+
+              {/* DAILY STAR */}
+              <div className="featured-card my-3">
+                <div className="row">
+
+
+                  {/* content */}
+                  <div className="col-md-12">
+                    <div className="featured-card-content">
+                      <div className="px-3 py-3">
+                        <div className="featured-card-bookmark">
+                          <span>FEATURED</span>
+                        </div>
+                      </div>
+
+                      <h4 className="featured-card-title">Yamin Pascual Dormido - Visayan Daily Star</h4>
+                      
+                      <p
+                        className={
+                          !this.state.readMore
+                            ? "featured-card-text my-2"
+                            : "featured-card-text-open my-2"
+                        }
+                      >
+                        
+                      <div>
+                        <img src="../assets/0816/ba1.jpg" alt="testimonial" />
+                      </div>
+
+                      <br />
+                      <hr />
+
+                      <div class="pull-right">
+                        <img src="../assets/0816/ba2.jpg" alt="testimonial" />
+                      </div>
+
+                      </p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              {/* DAILY STAR - end */}
+
+
               {/* balcells */}
               <div className="featured-card my-3">
                 <div className="row">
@@ -381,6 +429,9 @@ class TestimonialPage extends React.Component {
                 </div>
               </div>
               {/* Salta-Macesar */}
+
+
+
 
               <div className="featured-card my-3">
                 <div className="row row2 order-sm-first order-md-0">

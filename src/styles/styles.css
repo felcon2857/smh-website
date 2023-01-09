@@ -1646,6 +1646,13 @@ a {
   transition: 0.3s;
   border-radius: 5px;
 }
+.inner-vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+  border-radius: 5px;
+}
 
 .inner-img:hover {
   transform: scale(1.2);
